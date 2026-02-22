@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO: Core ──────────────────────────────────────── -->
+  <title>Hamkor Bo'ling — Lumi | Bolalar markazlari uchun platforma</title>
+  <meta name="description" content="Lumi bilan hamkorlik qiling va markazingiz daromadini +50% ga oshiring. Atiga 20 daqiqada ulaning. Minglab ota-onalar platformamiz orqali bolalar markazlarini topishadi." />
+  <meta name="keywords" content="Lumi hamkor, bolalar markazi, daromad oshirish, platforma, Toshkent, детский центр партнер" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lumipass.uz/partners" />
+
+  <!-- ── SEO: Open Graph ───────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://lumipass.uz/partners" />
+  <meta property="og:title"       content="Lumi bilan Hamkor Bo'ling — Markazingiz Daromadini +50% Oshiring" />
+  <meta property="og:description" content="Atiga 20 daqiqada platformamizga ulaning va minglab ota-onalarga yetib boring." />
+  <meta property="og:image"       content="https://lumipass.uz/assets/images/og-image.png" />
+  <meta property="og:site_name"   content="Lumi" />
+
+  <!-- ── SEO: Schema.org ───────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Lumi Partner Program",
+    "description": "Join Lumi platform and grow your children's activity center revenue.",
+    "url": "https://lumipass.uz/partners",
+    "isPartOf": { "@type": "WebSite", "name": "Lumi", "url": "https://lumipass.uz" }
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo-lumi.png" />
+  <link rel="apple-touch-icon"           href="assets/logos/logo-lumi.png" />
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- GA dynamic inject -->
+<script src="js/config.js"></script>
+<script>
+  (function(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + LUMI_CONFIG.GA_ID;
+    document.head.appendChild(s);
+    s.onload = function(){ gtag('config', LUMI_CONFIG.GA_ID); };
+  })();
+</script>
+
+<!-- ════════════════════════════════════════════════════════
+     MOBILE MENU
+     ════════════════════════════════════════════════════════ -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">✕</button>
+  <a href="index.html"   onclick="closeMobileMenu()" data-i18n="nav_home">Bosh sahifa</a>
+  <a href="#pp-why"      onclick="closeMobileMenu()" data-i18n="pp_why_tag">Afzalliklar</a>
+  <a href="#pp-models"   onclick="closeMobileMenu()" data-i18n="pp_models_tag">Hamkorlik</a>
+  <a href="#pp-steps"    onclick="closeMobileMenu()" data-i18n="pp_steps_tag">Boshlash</a>
+  <a href="#pp-cta"      onclick="closeMobileMenu()" data-i18n="pp_cta_btn">Ariza</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="uz" onclick="setLang('uz')">UZ</button>
+    <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn"        data-lang="ru" onclick="setLang('ru')">RU</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR
+     ════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation">
+  <!-- CHANGE: removed "Lumi" text span — logo image only (CSS .nav-logo-img is now 46px) -->
+  <a href="index.html" class="nav-logo" aria-label="Lumi home">
+    <img src="assets/logos/logo-lumi.png" alt="Lumi" class="nav-logo-img" />
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="index.html"  data-i18n="nav_home">Bosh sahifa</a></li>
+    <li><a href="#pp-why"     data-i18n="pp_why_tag">Afzalliklar</a></li>
+    <li><a href="#pp-models"  data-i18n="pp_models_tag">Hamkorlik</a></li>
+    <li><a href="#pp-steps"   data-i18n="pp_steps_tag">Boshlash</a></li>
+    <li><a href="#pp-cta"     data-i18n="nav_contact">Aloqa</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="lang-switcher" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="uz" onclick="setLang('uz')">UZ</button>
+      <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn"        data-lang="ru" onclick="setLang('ru')">RU</button>
+    </div>
+    <!-- CHANGE: was href to LUMI_CONFIG.PARTNER_FORM_URL (Telegram). Now opens form modal. -->
+    <button class="btn btn-primary" onclick="trackPartnerCTA('navbar'); openPartnerModal();" data-i18n="pp_btn">Hamkor Bo'lish</button>
+  </div>
+
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════════════════════ -->
+<section id="pp-hero">
+  <div class="hero-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="pp-hero-inner section-inner">
+    <!-- Left: copy -->
+    <div class="reveal">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span data-i18n="pp_badge">Biznes hamkorlar uchun</span>
+      </div>
+      <h1>
+        <span data-i18n="pp_h1a">Markazingiz daromadini </span><span class="hl" data-i18n="pp_h1b">+50% gacha oshiring</span><span data-i18n="pp_h1c"> — atiga 20 daqiqada</span>
+      </h1>
+      <p data-i18n="pp_p">Lumi platformasiga qo'shiling va minglab ota-onalarga farzandlari uchun eng yaxshi markaz sifatida ko'rining. Yangi mijozlar siz haqingizda bilib olishadi va to'g'ridan-to'g'ri yozilishadi.</p>
+
+      <div class="hero-ctas">
+        <div class="hero-cta-row">
+          <!-- CHANGE: was href to LUMI_CONFIG.PARTNER_FORM_URL. Now opens form modal. -->
+          <button class="btn btn-primary btn-primary-lg"
+             onclick="trackPartnerCTA('hero'); openPartnerModal();"
+             data-i18n="pp_btn">Hamkor Bo'lish</button>
+          <a href="#pp-why" class="btn btn-secondary" data-i18n="pp_why_tag">Afzalliklarni ko'rish</a>
+        </div>
+        <p class="hero-cta-note" data-i18n="cta_sub">Bepul · Majburiyat yo'q</p>
+      </div>
+
+      <!-- Hero stats -->
+      <div class="pp-hero-stats">
+        <div class="pp-stat">
+          <div class="pp-stat-v" data-i18n="pp_stat1v">50+</div>
+          <div class="pp-stat-d" data-i18n="pp_stat1d">Hamkor markazlar</div>
+        </div>
+        <div class="pp-stat">
+          <div class="pp-stat-v" data-i18n="pp_stat2v">20 min</div>
+          <div class="pp-stat-d" data-i18n="pp_stat2d">Ulash uchun ketadigan vaqt</div>
+        </div>
+        <div class="pp-stat" style="background:var(--brand);border-color:var(--brand);">
+          <div class="pp-stat-v" style="color:#fff;" data-i18n="pp_stat3v">+50%</div>
+          <div class="pp-stat-d" style="color:rgba(255,255,255,.7);" data-i18n="pp_stat3d">O'rtacha daromad o'sishi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHANGE: was just a <div class="pp-hero-photo"> with a plain photo.
+         Now a .pp-hero-visual container holding both the photo and 3 floating
+         partner-dashboard cards. Card values come from LUMI_CONFIG.PARTNER_DASHBOARD (config.js). -->
+    <div class="pp-hero-visual reveal d2">
+      <div class="pp-hero-photo">
+        <img id="partnersHeroPhoto" src="assets/images/partners-hero.jpg" alt="Bolalar markazi" loading="eager" />
+      </div>
+
+      <!-- Dashboard card 1: today's bookings (top-right) -->
+      <div class="hfc ppd-1">
+        <div class="hfc-label" data-i18n="ppd_today_label">Bugungi bronlar</div>
+        <div class="ppd-count" id="ppd-today">5</div>
+        <div class="ppd-suffix" data-i18n="ppd_bookings">ta bron ✓</div>
+        <div class="ppd-badge" data-i18n="ppd_growing">📈 O'smoqda</div>
+      </div>
+
+      <!-- Dashboard card 2: class + Monday bookings (bottom-right) -->
+      <div class="hfc ppd-2">
+        <div class="hfc-label" data-i18n="ppd_schedule_label">Dushanba jadvali</div>
+        <div class="ppd-activity">
+          <span class="ppd-activity-emoji" id="ppd-activity-emoji">🎾</span>
+          <div>
+            <div class="ppd-activity-name" id="ppd-activity-name">Tennis</div>
+            <div class="ppd-activity-info"><span id="ppd-monday-count">3</span> <span data-i18n="ppd_kids_booked">bola yozildi</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard card 3: new clients (bottom-left) -->
+      <div class="hfc ppd-3">
+        <div class="hfc-label" data-i18n="ppd_new_label">Yangi mijozlar</div>
+        <div class="ppd-new-num" id="ppd-new-clients">+2</div>
+        <div class="ppd-new-label" data-i18n="ppd_this_week">Bu hafta</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     HOW USERS USE LUMI (builds trust for partners)
+     ════════════════════════════════════════════════════════ -->
+<section id="pp-how">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-brand" data-i18n="pp_howuser_tag">📱 Foydalanuvchilar uchun</span>
+      <h2><span data-i18n="pp_howuser_h2a">Foydalanuvchilar Lumida </span><span class="hl" data-i18n="pp_howuser_h2b">nima qilishadi?</span></h2>
+      <p data-i18n="pp_howuser_p">Platformamiz ota-onalarni bevosita sizning markazingizga yo'naltiradi.</p>
+    </div>
+    <div class="user-steps">
+      <!-- CHANGE: was 4 hardcoded inline-styled colored placeholder divs.
+           Now each step has an <img id="app-screenshot-N"> filled by buildAppScreenshots()
+           from LUMI_CONFIG.APP_SCREENSHOTS in config.js. Replace .svg files with real
+           phone screenshots (portrait, ~360×640px). -->
+      <div class="user-step reveal d1">
+        <div class="us-photo">
+          <div id="app-screenshot-ph-1" class="us-photo-ph" style="background:var(--brand-light);color:var(--brand);">
+            📱 Replace:<br>screenshot-register.jpg
+          </div>
+          <img id="app-screenshot-1" src="assets/images/screenshot-register.jpg" alt="App registration screen" loading="lazy" />
+        </div>
+        <div class="us-body">
+          <div class="us-num">1</div>
+          <h4 data-i18n="hu1h">Ro'yxatdan o'tishadi</h4>
+          <p data-i18n="hu1p">Lumi ilovasini yuklab olib ro'yxatdan o'tishadi.</p>
+        </div>
+      </div>
+      <div class="user-step reveal d2">
+        <div class="us-photo">
+          <div id="app-screenshot-ph-2" class="us-photo-ph" style="background:var(--gold-light);color:#8B6300;">
+            📱 Replace:<br>screenshot-browse.jpg
+          </div>
+          <img id="app-screenshot-2" src="assets/images/screenshot-browse.svg" alt="App browse screen" loading="lazy" />
+        </div>
+        <div class="us-body">
+          <div class="us-num">2</div>
+          <h4 data-i18n="hu2h">Markaz tanlashadi</h4>
+          <p data-i18n="hu2p">Bolalar markazlari va mashg'ulotlarni ko'rib chiqishadi.</p>
+        </div>
+      </div>
+      <div class="user-step reveal d3">
+        <div class="us-photo">
+          <div id="app-screenshot-ph-3" class="us-photo-ph" style="background:var(--teal-light);color:#0D9488;">
+            📱 Replace:<br>screenshot-book.jpg
+          </div>
+          <img id="app-screenshot-3" src="assets/images/screenshot-book.svg" alt="App booking screen" loading="lazy" />
+        </div>
+        <div class="us-body">
+          <div class="us-num">3</div>
+          <h4 data-i18n="hu3h">Yozilishadi</h4>
+          <p data-i18n="hu3p">To'g'ridan-to'g'ri sizning markazingizga yozilishadi.</p>
+        </div>
+      </div>
+      <div class="user-step reveal d4">
+        <div class="us-photo">
+          <div id="app-screenshot-ph-4" class="us-photo-ph" style="background:var(--coral-light);color:#C0392B;">
+            📱 Replace:<br>screenshot-qr.jpg
+          </div>
+          <img id="app-screenshot-4" src="assets/images/screenshot-qr.svg" alt="App QR scan screen" loading="lazy" />
+        </div>
+        <div class="us-body">
+          <div class="us-num">4</div>
+          <h4 data-i18n="hu4h">Tashrif buyurishadi</h4>
+          <p data-i18n="hu4p">Kelishadi va QR-kodni skanerlashadi — to'lov avtomatik amalga oshadi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     WHY PARTNER  (benefits)
+     ════════════════════════════════════════════════════════ -->
+<section id="pp-why">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-coral" data-i18n="pp_why_tag">⭐ Afzalliklar</span>
+      <h2><span data-i18n="pp_why_h2a">Nega Lumi bilan </span><span class="hl" data-i18n="pp_why_h2b">hamkorlik qilish kerak?</span></h2>
+      <p data-i18n="pp_why_p">Lumi orqali markazingizning taniqliligini oshiring, yangi mijozlarga ega bo'ling va avtomatlashtirilgan tizimlar yordamida daromadingizni ko'paytiring.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal d1"><div class="feat-icon fi-brand">👥</div><h4 data-i18n="w1h">Keng auditoriya</h4><p data-i18n="w1p">Platformamiz orqali minglab foydalanuvchilarga yetib boring va yangi mijozlarni jalb qiling.</p></div>
+      <div class="benefit-card reveal d2"><div class="feat-icon fi-gold">📈</div><h4 data-i18n="w2h">50% gacha daromad o'sishi</h4><p data-i18n="w2p">Bizning tizimlar yordamida markazingiz sezilarli daromad o'sishiga erishadi.</p></div>
+      <div class="benefit-card reveal d3"><div class="feat-icon fi-teal">⚡</div><h4 data-i18n="w3h">Tez integratsiya</h4><p data-i18n="w3p">Faqat 20 daqiqada ro'yxatdan o'tib, platformamizga qo'shiling.</p></div>
+      <div class="benefit-card reveal d1"><div class="feat-icon fi-coral">📊</div><h4 data-i18n="w4h">Tahlil va hisobot</h4><p data-i18n="w4p">Yo'nalishlar va talablar bo'yicha aniq ma'lumotlar bilan ishlang.</p></div>
+      <div class="benefit-card reveal d2"><div class="feat-icon fi-brand">📣</div><h4 data-i18n="w5h">Marketing imkoniyati</h4><p data-i18n="w5p">Lumi bilan birgalikda marketing targ'ibotlarida ishtirok eting, brendingizni kuchaytiring.</p></div>
+      <div class="benefit-card reveal d3"><div class="feat-icon fi-green">🔄</div><h4 data-i18n="w6h">Qaytuvchi mijozlar</h4><p data-i18n="w6p">Yaxshi xizmat bilan bolalarning 87% qayta keladi — Lumi bu jarayonni osonlashtiradi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     STATS BAND
+     ════════════════════════════════════════════════════════ -->
+<section id="stats">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-item reveal d1"><span class="stat-icon">🏢</span><div class="stat-value">50+</div><div class="stat-desc" data-i18n="pp_stat1d">Hamkor markazlar</div></div>
+      <div class="stat-item reveal d2"><span class="stat-icon">⏱️</span><div class="stat-value">20</div><div class="stat-desc">daqiqa ulash uchun</div></div>
+      <div class="stat-item reveal d3"><span class="stat-icon">📈</span><div class="stat-value">+50%</div><div class="stat-desc" data-i18n="pp_stat3d">O'rtacha daromad o'sishi</div></div>
+      <div class="stat-item reveal d4"><span class="stat-icon">🔄</span><div class="stat-value">87%</div><div class="stat-desc">bolalar qayta keladi</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     PARTNERSHIP MODELS
+     ════════════════════════════════════════════════════════ -->
+<section id="pp-models">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-gold" data-i18n="pp_models_tag">🤝 Hamkorlik modellari</span>
+      <h2><span data-i18n="pp_models_h2a">3 xil </span><span class="hl" data-i18n="pp_models_h2b">hamkorlik imkoniyati</span></h2>
+    </div>
+    <div class="models-grid">
+      <div class="model-card featured-model reveal d1">
+        <div class="model-num">01</div>
+        <div class="model-name" data-i18n="m1n">Standart</div>
+        <div class="model-desc" data-i18n="m1d">Ilovaga o'z jadvalingizni qo'shing va yangi mijozlarni oling. Eng mashhur model.</div>
+      </div>
+      <div class="model-card reveal d2">
+        <div class="model-num">02</div>
+        <div class="model-name" data-i18n="m2n">Kengaytirilgan</div>
+        <div class="model-desc" data-i18n="m2d">Talab va takliflarga binoan yangi faoliyat turlarini ishga tushiring.</div>
+      </div>
+      <div class="model-card reveal d3">
+        <div class="model-num">03</div>
+        <div class="model-name" data-i18n="m3n">Franchise</div>
+        <div class="model-desc" data-i18n="m3d">Statistikamizga asoslangan holda yangi markazlar oching.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     HOW TO JOIN  (partner steps)
+     ════════════════════════════════════════════════════════ -->
+<section id="pp-steps">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-teal" data-i18n="pp_steps_tag">🚀 Boshlash</span>
+      <h2><span data-i18n="pp_steps_h2a">4 oddiy qadamda </span><span class="hl" data-i18n="pp_steps_h2b">qo'shiling</span></h2>
+      <p data-i18n="pp_steps_p">Siz hech narsa to'lamaysiz — biz sizga mijozlar beramiz va pul to'laymiz.</p>
+    </div>
+    <div class="partner-steps">
+      <div class="ps-card reveal d1">
+        <div class="ps-num">1</div>
+        <span class="ps-emoji">🤝</span>
+        <h4 data-i18n="ps1h">Platformaga ulaning</h4>
+        <p data-i18n="ps1p">Hamkorlik shartnomasini imzolab, 15-20 daqiqada akkaunt yaratiladi.</p>
+      </div>
+      <div class="ps-card reveal d2">
+        <div class="ps-num">2</div>
+        <span class="ps-emoji">📅</span>
+        <h4 data-i18n="ps2h">Jadval tuzing</h4>
+        <p data-i18n="ps2p">Qaysi bolalarni va qachon qabul qilishingizni belgilang.</p>
+      </div>
+      <div class="ps-card reveal d3">
+        <div class="ps-num">3</div>
+        <span class="ps-emoji">⭐</span>
+        <h4 data-i18n="ps3h">Xizmat ko'rsating</h4>
+        <p data-i18n="ps3p">Yaxshi darslarda bolalar 87% hollarda qaytib keladi.</p>
+      </div>
+      <div class="ps-card reveal d4">
+        <div class="ps-num">4</div>
+        <span class="ps-emoji">💳</span>
+        <h4 data-i18n="ps4h">QR orqali to'lov</h4>
+        <p data-i18n="ps4p">Har safar QR kod skanerlansa, biz sizga to'laymiz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     PARTNER CTA
+     ════════════════════════════════════════════════════════ -->
+<section id="pp-cta">
+  <div class="section-inner section-pad">
+    <div class="pp-cta-box reveal">
+      <div class="cta-blobs" aria-hidden="true"><div class="cb1"></div><div class="cb2"></div></div>
+      <h2 data-i18n="pp_cta_h2">Hoziroq ariza qoldiring</h2>
+      <p data-i18n="pp_cta_p">Mutaxassislarimiz siz bilan bog'lanib, barcha savollaringizga javob berishadi.</p>
+      <div class="pp-cta-actions">
+        <!-- CHANGE: was href to LUMI_CONFIG.PARTNER_FORM_URL. Now opens form modal. -->
+        <button class="btn btn-gold" onclick="trackPartnerCTA('cta'); openPartnerModal();"
+           style="padding:18px 44px;font-size:1.1rem;border-radius:var(--r);"
+           data-i18n="pp_cta_btn">Hamkor Bo'lish</button>
+        <p class="pp-cta-sub" data-i18n="pp_cta_sub">Bepul · Majburiyat yo'q</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER  (same as index.html)
+     ════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logos/logo-lumi.png" alt="Lumi" class="footer-logo-img" />
+        <span class="footer-logo-text">Lumi</span>
+        <p data-i18n="footer_tagline">Toshkentdagi bolalar uchun sport, san'at, ta'lim va ko'ngil ochar — hammasi bir joyda.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_company">Kompaniya</h5>
+        <a href="index.html"          data-i18n="nav_home">Bosh sahifa</a>
+        <a href="index.html#features" data-i18n="nav_features">Afzalliklar</a>
+        <a href="index.html#pricing"  data-i18n="nav_pricing">To'plamlar</a>
+        <a href="partners.html"       data-i18n="nav_partners">Hamkorlar</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_legal">Huquqiy</h5>
+        <a href="#" data-i18n="footer_privacy">Maxfiylik siyosati</a>
+        <a href="#" data-i18n="footer_offer">Ommaviy oferta</a>
+      </div>
+      <!-- CHANGE: emoji icons replaced with SVG icons (same as index.html footer) -->
+      <div class="footer-col">
+        <h5 data-i18n="footer_contact">Aloqa</h5>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li><a id="footer-phone" href="#">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3-8.59A2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span>
+            <span class="fc-link-text">—</span>
+          </a></li>
+          <li><a id="footer-telegram" href="#" onclick="trackTelegram('footer')">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg></span>
+            <span class="fc-link-text">—</span>
+          </a></li>
+          <li><a id="footer-instagram" href="#" target="_blank" rel="noopener">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+            <span class="fc-link-text">—</span>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr" />
+    <div class="footer-bottom">
+      <span>© 2025 Lumi. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span></span>
+      <span data-i18n="footer_made">Toshkent bolalari uchun ❤️ bilan yaratildi</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════════════
+     PARTNER APPLICATION MODAL
+     NEW: opened by all "Hamkor Bo'lish" buttons.
+     Submits to LUMI_CONFIG.PARTNER_FORM_ENDPOINT (Google Sheets).
+     See setup/google-apps-script.js for backend instructions.
+     ════════════════════════════════════════════════════════ -->
+<div id="partnerModal" class="modal-backdrop" onclick="if(event.target===this)closePartnerModal();" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <button class="modal-close-btn" onclick="closePartnerModal()" aria-label="Close">✕</button>
+
+    <div class="modal-header">
+      <h3 id="modalTitle" data-i18n="modal_title">Hamkor bo'lish uchun ariza</h3>
+      <p data-i18n="modal_subtitle">Shaklni to'ldiring — mutaxassisimiz 24 soat ichida siz bilan bog'lanadi.</p>
+    </div>
+
+    <!-- FORM VIEW -->
+    <div id="modalForm">
+      <div class="modal-fields">
+        <div class="modal-field">
+          <label data-i18n="modal_f_name">To'liq ism <span style="color:var(--coral)">*</span></label>
+          <input id="f-name" type="text" data-i18n-placeholder="modal_ph_name" placeholder="Sardor Karimov" autocomplete="name" />
+        </div>
+        <div class="modal-field">
+          <label data-i18n="modal_f_center">Markaz nomi <span style="color:var(--coral)">*</span></label>
+          <input id="f-center" type="text" data-i18n-placeholder="modal_ph_center" placeholder="RoboKids Academy" autocomplete="organization" />
+        </div>
+        <div class="modal-field full-width">
+          <label data-i18n="modal_f_phone">Telefon raqami <span style="color:var(--coral)">*</span></label>
+          <input id="f-phone" type="tel" placeholder="+998 90 123 45 67" autocomplete="tel" />
+        </div>
+        <div class="modal-field">
+          <label>Instagram <span class="opt" data-i18n="modal_optional">(ixtiyoriy)</span></label>
+          <input id="f-insta" type="text" placeholder="@markazim" />
+        </div>
+        <div class="modal-field">
+          <label>Telegram <span class="opt" data-i18n="modal_optional">(ixtiyoriy)</span></label>
+          <input id="f-tg" type="text" placeholder="@markazim" />
+        </div>
+        <div class="modal-field full-width">
+          <label data-i18n="modal_f_notes">Qo'shimcha ma'lumot <span class="opt" data-i18n="modal_optional">(ixtiyoriy)</span></label>
+          <textarea id="f-notes" rows="3" data-i18n-placeholder="modal_ph_notes" placeholder="Markazingiz haqida qisqacha..."></textarea>
+        </div>
+
+        <div id="modalError" class="modal-error"></div>
+      </div>
+
+      <button id="modalSubmitBtn" class="modal-submit-btn" onclick="handlePartnerForm();" data-i18n="modal_submit">Ariza Yuborish</button>
+    </div>
+
+    <!-- SUCCESS VIEW (shown after successful submission) -->
+    <div id="modalSuccess" class="modal-success">
+      <div class="modal-success-icon">✅</div>
+      <h4 data-i18n="modal_ok_title">Ariza qabul qilindi!</h4>
+      <p data-i18n="modal_ok_body">Mutaxassisimiz 24 soat ichida siz bilan bog'lanadi. Rahmat!</p>
+      <button class="modal-success-close" onclick="closePartnerModal();" data-i18n="modal_ok_close">Yopish</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

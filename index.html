@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO: Core ──────────────────────────────────────── -->
+  <title>Lumi — Bolalar uchun Mashg'ulotlar Platformasi | Toshkent</title>
+  <meta name="description" content="Lumi — 0-16 yoshli bolalar uchun sport, ijod, ta'lim va ko'ngil ochar mashg'ulotlari. Toshkentdagi 50+ hamkor markazda 100+ yo'nalish. Lumi Coin orqali bron qiling." />
+  <meta name="keywords" content="bolalar mashg'ulotlari, bolalar sport Toshkent, robototexnika, suzish, raqs, futbol, Lumi, LumiPass, детские занятия Ташкент" />
+  <meta name="author" content="Lumi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lumipass.uz/" />
+
+  <!-- ── SEO: Open Graph ───────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://lumipass.uz/" />
+  <meta property="og:title"       content="Lumi — Bolalar uchun №1 Mashg'ulotlar Platformasi" />
+  <meta property="og:description" content="Toshkentdagi 50+ markazda 100+ mashg'ulot. Sport, ijod, ta'lim — hammasi bir joyda." />
+  <meta property="og:image"       content="https://lumipass.uz/assets/images/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="uz_UZ" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:site_name"   content="Lumi" />
+
+  <!-- ── SEO: Twitter Card ─────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Lumi — Bolalar uchun №1 Mashg'ulotlar Platformasi" />
+  <meta name="twitter:description" content="Toshkentdagi 50+ markazda 100+ mashg'ulot. Sport, ijod, ta'lim — hammasi bir joyda." />
+  <meta name="twitter:image"       content="https://lumipass.uz/assets/images/og-image.png" />
+
+  <!-- ── SEO: Schema.org ───────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lumi",
+    "url": "https://lumipass.uz",
+    "logo": "https://lumipass.uz/assets/logos/logo-lumi.png",
+    "description": "Children's activities platform for ages 0-16 in Tashkent, Uzbekistan.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Tashkent", "addressCountry": "UZ" },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- ── Favicon ────────────────────────────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo-lumi.png" />
+  <link rel="apple-touch-icon"           href="assets/logos/logo-lumi.png" />
+
+  <!-- ── Google Analytics 4 ────────────────────────────── -->
+  <!-- GA_ID is read from js/config.js — edit it there     -->
+  <script>
+    // Bootstrap gtag before config.js loads
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ── GA script injected dynamically from config ─────── -->
+<script src="js/config.js"></script>
+<script>
+  (function(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + LUMI_CONFIG.GA_ID;
+    document.head.appendChild(s);
+    s.onload = function(){ gtag('config', LUMI_CONFIG.GA_ID); };
+  })();
+</script>
+
+<!-- ════════════════════════════════════════════════════════
+     MOBILE MENU
+     ════════════════════════════════════════════════════════ -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">✕</button>
+  <a href="#features"      onclick="closeMobileMenu()" data-i18n="nav_features">Afzalliklar</a>
+  <a href="#activities"    onclick="closeMobileMenu()" data-i18n="nav_activities">Mashg'ulotlar</a>
+  <a href="#how"           onclick="closeMobileMenu()" data-i18n="nav_how">Qanday ishlaydi</a>
+  <a href="#pricing"       onclick="closeMobileMenu()" data-i18n="nav_pricing">To'plamlar</a>
+  <a href="#faq"           onclick="closeMobileMenu()" data-i18n="nav_faq">Savollar</a>
+  <a href="partners.html"  onclick="closeMobileMenu()" data-i18n="nav_partners">Hamkorlar</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="uz" onclick="setLang('uz')">UZ</button>
+    <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn"        data-lang="ru" onclick="setLang('ru')">RU</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR
+     ════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation">
+  <!-- CHANGE: removed "Lumi" text span — logo image only (CSS makes it bigger) -->
+  <a href="index.html" class="nav-logo" aria-label="Lumi home">
+    <img src="assets/logos/logo-lumi.png" alt="Lumi" class="nav-logo-img" />
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#features"   data-i18n="nav_features">Afzalliklar</a></li>
+    <li><a href="#activities" data-i18n="nav_activities">Mashg'ulotlar</a></li>
+    <li><a href="#how"        data-i18n="nav_how">Qanday ishlaydi</a></li>
+    <li><a href="#pricing"    data-i18n="nav_pricing">To'plamlar</a></li>
+    <li><a href="#faq"        data-i18n="nav_faq">Savollar</a></li>
+    <li><a href="partners.html" data-i18n="nav_partners">Hamkorlar</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="lang-switcher" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="uz" onclick="setLang('uz')">UZ</button>
+      <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn"        data-lang="ru" onclick="setLang('ru')">RU</button>
+    </div>
+    <a href="#" id="nav-webapp-btn" class="btn btn-primary"
+       onclick="trackWebApp('navbar'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;"
+       target="_blank" rel="noopener" data-i18n="nav_cta">Ilovani Ochish</a>
+  </div>
+
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="hero-inner section-inner">
+    <!-- Left: copy -->
+    <div class="reveal">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span data-i18n="hero_badge">Toshkentning №1 bolalar platformasi</span>
+      </div>
+      <h1>
+        <span data-i18n="hero_h1a">Farzandingizning </span><span class="hl" data-i18n="hero_h1b">yorqin kelajagi</span><span data-i18n="hero_h1c"> shu yerda boshlanadi</span>
+      </h1>
+      <p data-i18n="hero_p">Bolangiz uchun mashg'ulotlarni toping, band qiling va kuzating — sport, san'at, ta'lim va ko'ngil ochar — hammasi bir platformada. Lumi Coin orqali.</p>
+
+      <div class="hero-ctas">
+        <div class="hero-cta-row">
+          <!-- PRIMARY: Web App -->
+          <a href="#" class="btn btn-primary btn-primary-lg"
+             onclick="trackWebApp('hero'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;"
+             target="_blank" rel="noopener" data-i18n="hero_btn_web">Ilovani Ochish</a>
+          <!-- SECONDARY: Telegram -->
+          <a href="#" class="btn btn-secondary"
+             onclick="trackTelegram('hero'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;"
+             target="_blank" rel="noopener" data-i18n="hero_btn_tg">Telegram orqali</a>
+        </div>
+        <p class="hero-cta-note" data-i18n="hero_note">🔒 Bepul kirish — ro'yxatdan o'tish shart emas</p>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="sn">50+</div><div class="sl" data-i18n="stat_partners">Hamkorlar</div></div>
+        <div class="hero-stat"><div class="sn">100+</div><div class="sl" data-i18n="stat_dirs">Yo'nalishlar</div></div>
+        <div class="hero-stat"><div class="sn">0–16</div><div class="sl" data-i18n="stat_age">Yosh oralig'i</div></div>
+        <div class="hero-stat"><div class="sn">24/7</div><div class="sl" data-i18n="stat_support">Qo'llab-quvvatlash</div></div>
+      </div>
+    </div>
+
+    <!-- Right: photo + floating cards -->
+    <div class="hero-visual reveal d2" aria-hidden="true">
+      <div class="hero-photo">
+        <!-- CHANGE: src filled by JS from LUMI_CONFIG.HERO_IMAGE — edit config.js to change -->
+        <img id="heroPhoto" src="assets/images/hero-children.jpg" alt="Happy children doing activities" loading="eager" />
+      </div>
+
+      <!-- CHANGE: Hero floating cards — 4 cards now instead of 3.
+           Booking names/emojis/times come from LUMI_CONFIG.HERO_BOOKINGS (config.js).
+           Coin amount comes from LUMI_CONFIG.HERO_COIN_AMOUNT (config.js).
+           JS fills them via buildHeroCards() and fillCoinAmount() in main.js. -->
+
+      <!-- Card: Coin balance (top-right) -->
+      <div class="hfc hfc-2">
+        <div class="hfc-label" data-i18n="hfc_balance">Balansingiz</div>
+        <div class="hfc-coins">
+          <img src="assets/logos/logo-coin.svg" alt="Lumi Coin" class="hfc-coin-img" />
+          <div>
+            <div class="hfc-amount" id="hfcCoinAmount">340</div>
+            <div class="hfc-coin-label" data-i18n="hfc_coins">Lumi Tangalari</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Booking 1 — robotics (bottom-right) -->
+      <div class="hfc hfc-1">
+        <div class="hfc-label" data-i18n="hfc_activity">Bron qilindi</div>
+        <div class="hfc-booking">
+          <span class="hfc-emoji" id="hfc-b1-emoji">🤖</span>
+          <div>
+            <div class="hfc-name" id="hfc-b1-name">Robototexnika</div>
+            <div class="hfc-time" id="hfc-b1-time">15:00 — 16:30</div>
+          </div>
+        </div>
+        <span class="hfc-badge">✓ <span data-i18n="hfc_booked">Tasdiqlandi</span></span>
+      </div>
+
+      <!-- Card: Booking 2 — swimming (middle-left) -->
+      <div class="hfc hfc-3">
+        <div class="hfc-label" data-i18n="hfc_activity">Bron qilindi</div>
+        <div class="hfc-booking">
+          <span class="hfc-emoji" id="hfc-b2-emoji">🏊</span>
+          <div>
+            <div class="hfc-name" id="hfc-b2-name">Suzish</div>
+            <div class="hfc-time" id="hfc-b2-time">10:00 — 11:00</div>
+          </div>
+        </div>
+        <span class="hfc-badge">✓ <span data-i18n="hfc_booked">Tasdiqlandi</span></span>
+      </div>
+
+      <!-- Card: Booking 3 — playground (top-left) -->
+      <div class="hfc hfc-4">
+        <div class="hfc-label" data-i18n="hfc_activity">Bron qilindi</div>
+        <div class="hfc-booking">
+          <span class="hfc-emoji" id="hfc-b3-emoji">🛝</span>
+          <div>
+            <div class="hfc-name" id="hfc-b3-name">O'yingoh</div>
+            <div class="hfc-time" id="hfc-b3-time">14:00 — 16:00</div>
+          </div>
+        </div>
+        <span class="hfc-badge">✓ <span data-i18n="hfc_booked">Tasdiqlandi</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     PARTNER LOGOS STRIP
+     ════════════════════════════════════════════════════════ -->
+<section id="partners-strip" aria-label="Partner centers">
+  <p class="partners-strip-label" data-i18n="partners_title">50+ hamkor markaz biz bilan ishlaydi</p>
+  <div class="partners-track-wrap">
+    <!-- Built dynamically from LUMI_CONFIG.PARTNERS in main.js -->
+    <div class="partners-track" id="partnersTrack"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FEATURES
+     ════════════════════════════════════════════════════════ -->
+<section id="features">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-brand" data-i18n="feat_tag">✨ Nega Lumi?</span>
+      <h2><span data-i18n="feat_h2a">Farzandingizga kerak bo'lgan hamma narsa — </span><span class="hl" data-i18n="feat_h2b">bir joyda</span></h2>
+      <p data-i18n="feat_p">Lumi bolalar ta'limi, sporti va ko'ngil ocharning eng yaxshisini yagona platformada jamlaydi.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal d1">
+        <div class="feat-icon fi-brand">🗂️</div>
+        <h3 data-i18n="f1h">Hammasi bir joyda</h3>
+        <p data-i18n="f1p">Bir qulay platforma orqali farzandingizga mos mashg'ulotlarni toping va band qiling.</p>
+      </div>
+      <div class="feature-card reveal d2">
+        <div class="feat-icon fi-gold">⏱️</div>
+        <h3 data-i18n="f2h">Vaqtingizni tejang</h3>
+        <p data-i18n="f2p">Darslar va mashg'ulotlarni osonlik bilan rejalashtiring. Barcha xizmatlar va eslatmalar bir platformada.</p>
+      </div>
+      <div class="feature-card reveal d3">
+        <div class="feat-icon fi-teal">🏅</div>
+        <h3 data-i18n="f3h">Ishonchli hamkorlar</h3>
+        <p data-i18n="f3p">Faqat tekshirilgan va sifatli markazlar bilan hamkorlik qilamiz. Ota-onalar izohlari to'g'ri tanlov qilishga yordam beradi.</p>
+      </div>
+      <div class="feature-card reveal d1">
+        <div class="feat-icon fi-coral">📈</div>
+        <h3 data-i18n="f4h">Rivojlanishni kuzating</h3>
+        <p data-i18n="f4p">Farzandingiz yutuqlarini kuzating va shaxsiylashtirilgan tavsiyalar oling.</p>
+      </div>
+      <div class="feature-card reveal d2">
+        <!-- CHANGE: 🪙 replaced with coin image (logo-coin.svg) -->
+        <div class="feat-icon fi-gold"><img src="assets/logos/logo-coin.svg" class="coin-icon-sm" alt="Lumi Coin"></div>
+        <h3 data-i18n="f5h">Pulingizni tejang</h3>
+        <p data-i18n="f5p">Lumi Coin to'plamlari orqali faqat foydalangan mashg'ulotlaringiz uchun to'laysiz. Isrof bo'ladigan abonementlar yo'q.</p>
+      </div>
+      <div class="feature-card reveal d3">
+        <div class="feat-icon fi-green">🛡️</div>
+        <h3 data-i18n="f6h">Xavfsizlik birinchi</h3>
+        <p data-i18n="f6p">Farzandingiz har doim nazorat ostida va xavfsiz muhitda mashg'ulotlarda ishtirok etadi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     ACTIVITIES
+     CHANGE: Messaging updated — emphasises marketplace/bridge to partner centers,
+             not "our classes". Added "X+ centers" tag and "Browse Centers" CTA.
+     ════════════════════════════════════════════════════════ -->
+<section id="activities">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-coral" data-i18n="act_tag">🏢 Markazlar</span>
+      <h2><span data-i18n="act_h2a">100+ yo'nalish, </span><span class="hl" data-i18n="act_h2b">50+ hamkor markaz</span></h2>
+      <p data-i18n="act_p">Lumi siz uchun Toshkentdagi eng yaxshi bolalar markazlarini jamladi. Bir joydan toping, bron qiling — markaz sizni kutadi.</p>
+    </div>
+    <div class="activities-grid">
+      <article class="activity-card reveal d1">
+        <img src="assets/images/activity-robotics.png" alt="Robototexnika markazlari" class="activity-photo" loading="lazy" />
+        <div class="activity-body">
+          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
+          <h4 data-i18n="a1h">Robototexnika</h4>
+          <p data-i18n="a1p">Texnologiyani sevadigan bolalar uchun. Toshkentdagi robototexnika markazlarini toping va bron qiling.</p>
+          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d2">
+        <img src="assets/images/activity-art.jpg" alt="Ijodiy san'at markazlari" class="activity-photo" loading="lazy" />
+        <div class="activity-body">
+          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
+          <h4 data-i18n="a2h">Ijodiy darslar</h4>
+          <p data-i18n="a2p">San'at, musiqa, rasm — hamkor ijod markazlarida farzandingizning iqtidorini kashf eting.</p>
+          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d3">
+        <img src="assets/images/activity-playground.png" alt="Bolalar o'yingohlari" class="activity-photo" loading="lazy" />
+        <div class="activity-body">
+          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
+          <h4 data-i18n="a3h">Bolalar o'yingohlari</h4>
+          <p data-i18n="a3p">Sifatli va xavfsiz o'yingohlarda dam olish. Markaz tanlang va bron qiling.</p>
+          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d1">
+        <img src="assets/images/activity-dance.png" alt="Raqs va gimnastika markazlari" class="activity-photo" loading="lazy" />
+        <div class="activity-body">
+          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
+          <h4 data-i18n="a4h">Raqs va gimnastika</h4>
+          <p data-i18n="a4p">Professional raqs va gimnastika markazlari — chiroyli qomat va moslashuvchanlik uchun.</p>
+          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d2">
+        <img src="assets/images/activity-swimming.png" alt="Suzish markazlari" class="activity-photo" loading="lazy" />
+        <div class="activity-body">
+          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
+          <h4 data-i18n="a5h">Suzish</h4>
+          <p data-i18n="a5p">Malakali murabbiylar bilan suzishni o'rganish. Bolalar basseynlarini toping va yoziling.</p>
+          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d3">
+        <img src="assets/images/activity-football.png" alt="Futbol maktablari" class="activity-photo" loading="lazy" />
+        <div class="activity-body">
+          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
+          <h4 data-i18n="a6h">Futbol</h4>
+          <p data-i18n="a6p">Jamoaviy sport — kuch va do'stlik. Toshkentdagi futbol maktablarini bir joydan toping.</p>
+          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     STATS
+     ════════════════════════════════════════════════════════ -->
+<section id="stats">
+  <div class="section-inner">
+    <div class="section-header reveal" style="margin-bottom:40px;">
+      <h2 style="color:#fff;"><span data-i18n="stats_h2a">Raqamlarda — </span><span style="color:var(--gold);" data-i18n="stats_h2b">Lumi platformasi</span></h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item reveal d1"><span class="stat-icon">🏢</span><div class="stat-value" data-i18n="s1v">50+</div><div class="stat-desc" data-i18n="s1d">Hamkorlar</div></div>
+      <div class="stat-item reveal d2"><span class="stat-icon">🎯</span><div class="stat-value" data-i18n="s2v">100+</div><div class="stat-desc" data-i18n="s2d">Yo'nalishlar</div></div>
+      <!-- CHANGE: replaced 🪙 emoji with Lumi coin image (set in assets/logos/logo-coin.svg) -->
+      <div class="stat-item reveal d3"><img src="assets/logos/logo-coin.svg" alt="Lumi Coin" class="stat-coin-img" /><div class="stat-value" data-i18n="s3v">6+</div><div class="stat-desc" data-i18n="s3d">To'plamlar</div></div>
+      <div class="stat-item reveal d4"><span class="stat-icon">💬</span><div class="stat-value" data-i18n="s4v">24/7</div><div class="stat-desc" data-i18n="s4d">Qo'llab-quvvatlash</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     HOW IT WORKS
+     ════════════════════════════════════════════════════════ -->
+<section id="how">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-gold" data-i18n="how_tag">🚀 Qanday ishlaydi</span>
+      <h2><span data-i18n="how_h2a">4 oddiy qadamda </span><span class="hl" data-i18n="how_h2b">boshlang</span></h2>
+      <p data-i18n="how_p">Farzandingizni mashg'ulotga yozish juda oson.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal d1"><div class="step-num">1</div><span class="step-emoji">📱</span><h4 data-i18n="s1h">Ro'yxatdan o'ting</h4><p data-i18n="s1p">Telegram bot orqali tez va oson ro'yxatdan o'ting.</p></div>
+      <div class="step-card reveal d2"><div class="step-num">2</div><span class="step-emoji">🪙</span><h4 data-i18n="s2h">To'plam oling</h4><p data-i18n="s2p">Sizga mos Lumi Coin to'plamini tanlang va xarid qiling.</p></div>
+      <div class="step-card reveal d3"><div class="step-num">3</div><span class="step-emoji">🔍</span><h4 data-i18n="s3h">Mashg'ulot tanlang</h4><p data-i18n="s3p">100+ yo'nalish orasidan farzandingizga mosini toping.</p></div>
+      <div class="step-card reveal d4"><div class="step-num">4</div><span class="step-emoji">🌟</span><h4 data-i18n="s4h">Kuzating va sevining!</h4><p data-i18n="s4p">Farzandingiz rivojlanishini platforma orqali kuzatib boring.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     PRICING
+     ════════════════════════════════════════════════════════ -->
+<section id="pricing">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-gold" data-i18n="price_tag">🪙 To'plamlar</span>
+      <h2><span data-i18n="price_h2a">O'zingizga mos </span><span class="hl" data-i18n="price_h2b">to'plamni tanlang</span></h2>
+      <p data-i18n="price_p">Lumi Coin sotib oling va istagan hamkor markazida istalgan mashg'ulotda foydalaning. Faqat foydalangan narsangiz uchun to'lang.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="pricing-card reveal d1">
+        <div class="plan-name" data-i18n="p1n">Qadam</div>
+        <div class="plan-dur"  data-i18n="p1d">15 kun</div>
+        <div class="plan-price"><div class="plan-amount">129 000</div><div class="plan-currency">UZS</div></div>
+        <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">50</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
+        <a href="#" class="plan-btn" onclick="trackPricing('Qadam'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+      </div>
+
+      <div class="pricing-card reveal d2">
+        <div class="plan-name" data-i18n="p2n">Kashfiyot</div>
+        <div class="plan-dur"  data-i18n="p2d">1 oy</div>
+        <div class="plan-price"><div class="plan-amount">379 000</div><div class="plan-currency">UZS</div></div>
+        <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">150</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
+        <a href="#" class="plan-btn" onclick="trackPricing('Kashfiyot'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+      </div>
+
+      <div class="pricing-card reveal d3">
+        <div class="plan-name" data-i18n="p3n">Sarguzasht</div>
+        <div class="plan-dur"  data-i18n="p3d">45 kun</div>
+        <div class="plan-price"><div class="plan-amount">679 000</div><div class="plan-currency">UZS</div></div>
+        <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">270</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
+        <a href="#" class="plan-btn" onclick="trackPricing('Sarguzasht'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+      </div>
+
+      <div class="pricing-card featured reveal d1">
+        <span class="feat-badge" data-i18n="popular">Mashhur</span>
+        <div class="plan-name" data-i18n="p4n">Parvoz</div>
+        <div class="plan-dur"  data-i18n="p4d">2 oy</div>
+        <div class="plan-price"><div class="plan-amount">999 000</div><div class="plan-currency">UZS</div></div>
+        <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">400</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
+        <a href="#" class="plan-btn" onclick="trackPricing('Parvoz'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+      </div>
+
+      <div class="pricing-card reveal d2">
+        <div class="plan-name" data-i18n="p5n">Ilhom</div>
+        <div class="plan-dur"  data-i18n="p5d">3 oy</div>
+        <div class="plan-price"><div class="plan-amount">1 490 000</div><div class="plan-currency">UZS</div></div>
+        <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">600</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
+        <a href="#" class="plan-btn" onclick="trackPricing('Ilhom'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+      </div>
+
+      <div class="pricing-card reveal d3">
+        <div class="plan-name" data-i18n="p6n">Kelajak</div>
+        <div class="plan-dur"  data-i18n="p6d">6 oy</div>
+        <div class="plan-price"><div class="plan-amount">3 459 000</div><div class="plan-currency">UZS</div></div>
+        <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">1 400</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
+        <a href="#" class="plan-btn" onclick="trackPricing('Kelajak'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FAQ
+     ════════════════════════════════════════════════════════ -->
+<section id="faq">
+  <div class="section-inner section-pad">
+    <div class="section-header reveal">
+      <span class="section-tag tag-teal" data-i18n="faq_tag">❓ Savollar</span>
+      <h2><span data-i18n="faq_h2a">Ko'p so'raladigan </span><span class="hl" data-i18n="faq_h2b">savollar</span></h2>
+      <p data-i18n="faq_p">Savolingiz bormi? Javobimiz tayyor. Qo'shimcha savollar uchun Telegram orqali murojaat qiling.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)"><span data-i18n="q1">Lumi nima?</span><span class="faq-icon">▾</span></button><div class="faq-answer"><p data-i18n="a1"></p></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)"><span data-i18n="q2">Abonement bormi?</span><span class="faq-icon">▾</span></button><div class="faq-answer"><p data-i18n="a2"></p></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)"><span data-i18n="q3">Lumi Tangalari qanday ishlaydi?</span><span class="faq-icon">▾</span></button><div class="faq-answer"><p data-i18n="a3"></p></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)"><span data-i18n="q4">Ishlatilmagan tangalar saqlanadimi?</span><span class="faq-icon">▾</span></button><div class="faq-answer"><p data-i18n="a4"></p></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)"><span data-i18n="q5">Mashg'ulotga qanday yozilish mumkin?</span><span class="faq-icon">▾</span></button><div class="faq-answer"><p data-i18n="a5"></p></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)"><span data-i18n="q6">Qanday mashg'ulotlar mavjud?</span><span class="faq-icon">▾</span></button><div class="faq-answer"><p data-i18n="a6"></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     MAIN CTA
+     ════════════════════════════════════════════════════════ -->
+<section id="cta">
+  <div class="section-inner section-pad">
+    <div class="cta-box reveal">
+      <div class="cta-blobs" aria-hidden="true"><div class="cb1"></div><div class="cb2"></div></div>
+      <div class="cta-tag" data-i18n="cta_tag">🚀 Hoziroq boshlang</div>
+      <h2 data-i18n="cta_h2">Farzandingizning yorqin kelajagi shu yerda!</h2>
+      <p data-i18n="cta_p">Toshkentdagi minglab oilalar qatori Lumi orqali farzandlaringiz uchun eng yaxshi mashg'ulotlarni kashf eting.</p>
+      <p class="cta-primary-note" data-i18n="cta_note">⭐ Eng qulay usul — to'g'ridan-to'g'ri veb-ilovamizdan boshlang</p>
+      <div class="cta-buttons">
+        <div class="cta-row">
+          <!-- PRIMARY: big gold Web App button -->
+          <a href="#" class="btn btn-gold"
+             onclick="trackWebApp('cta'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;"
+             target="_blank" rel="noopener" data-i18n="cta_webapp">Veb-ilovani Ochish</a>
+          <!-- SECONDARY: Telegram -->
+          <a href="#" class="btn btn-tg-dark"
+             onclick="trackTelegram('cta'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;"
+             target="_blank" rel="noopener" data-i18n="cta_tg">Telegram orqali</a>
+        </div>
+        <p class="cta-sub" data-i18n="cta_sub">Bepul · Ro'yxatdan o'tish shart emas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logos/logo-lumi.png" alt="Lumi" class="footer-logo-img" />
+        <span class="footer-logo-text">Lumi</span>
+        <p data-i18n="footer_tagline">Toshkentdagi bolalar uchun sport, san'at, ta'lim va ko'ngil ochar — hammasi bir joyda.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_company">Kompaniya</h5>
+        <a href="#features"    data-i18n="nav_features">Afzalliklar</a>
+        <a href="#activities"  data-i18n="nav_activities">Mashg'ulotlar</a>
+        <a href="#how"         data-i18n="nav_how">Qanday ishlaydi</a>
+        <a href="#pricing"     data-i18n="nav_pricing">To'plamlar</a>
+        <a href="partners.html" data-i18n="nav_partners">Hamkorlar</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_legal">Huquqiy</h5>
+        <a href="#" data-i18n="footer_privacy">Maxfiylik siyosati</a>
+        <a href="#" data-i18n="footer_offer">Ommaviy oferta</a>
+      </div>
+      <!-- CHANGE: emoji icons (📞 ✈ 📷) replaced with proper SVG icons.
+           Text content filled by buildFooterLinks() in main.js from LUMI_CONFIG.SOCIAL -->
+      <div class="footer-col">
+        <h5 data-i18n="footer_contact">Aloqa</h5>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li><a id="footer-phone" href="#">
+            <span class="fc-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a19.79 19.79 0 01-3-8.59A2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span>
+            <span class="fc-link-text">—</span>
+          </a></li>
+          <li><a id="footer-telegram" href="#" onclick="trackTelegram('footer')">
+            <span class="fc-icon"><svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg></span>
+            <span class="fc-link-text">—</span>
+          </a></li>
+          <li><a id="footer-instagram" href="#" target="_blank" rel="noopener">
+            <span class="fc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+            <span class="fc-link-text">—</span>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr" />
+    <div class="footer-bottom">
+      <span>© 2025 Lumi. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span></span>
+      <span data-i18n="footer_made">Toshkent bolalari uchun ❤️ bilan yaratildi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
