@@ -572,31 +572,54 @@ function setLang(lang) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   GOOGLE ANALYTICS 4
+   YANDEX METRICA  (replaces Google Analytics 4)
+   ─────────────────────────────────────────────────────────────
+   How to set up goals in Yandex Metrica UI:
+     Metrica → your counter → Settings → Goals → Add goal
+     → "JavaScript event" → paste the goal identifier string below.
+
+   Goals fired by this site:
+     "cta_click"             — any CTA button clicked
+     "pricing_click"         — pricing plan clicked
+     "scroll_depth_25/50/75/90" — user scrolled that far
+     "section_view"          — a section entered the viewport
+     "faq_open"              — FAQ item opened
+     "language_change"       — language switched
+     "partner_modal_open"    — partner application form opened
+     "partner_form_submit"   — form submitted successfully
+     "partner_form_fallback" — no endpoint set, opened Telegram
    ═══════════════════════════════════════════════════════════════ */
-function gaEvent(name, params = {}) {
-  if (typeof gtag === "function") gtag("event", name, params);
+function ymEvent(goal, params) {
+  if (typeof ym === "function" && LUMI_CONFIG.YM_ID) {
+    params ? ym(LUMI_CONFIG.YM_ID, "reachGoal", goal, params)
+           : ym(LUMI_CONFIG.YM_ID, "reachGoal", goal);
+  }
 }
+// gaEvent kept as alias — all internal callers (modal, FAQ, etc.) still work
+function gaEvent(name, params) { ymEvent(name, params); }
+
 function trackWebApp(location) {
-  gaEvent("cta_click", { cta_type: "web_app", cta_location: location });
+  ymEvent("cta_click", { cta_type: "web_app", cta_location: location });
 }
 function trackTelegram(location) {
-  gaEvent("cta_click", { cta_type: "telegram", cta_location: location });
+  ymEvent("cta_click", { cta_type: "telegram", cta_location: location });
 }
 function trackPartnerCTA(location) {
-  gaEvent("cta_click", { cta_type: "partner_form", cta_location: location });
+  ymEvent("cta_click", { cta_type: "partner_form", cta_location: location });
 }
 function trackPricing(planName) {
-  gaEvent("pricing_click", { plan_name: planName });
+  ymEvent("pricing_click", { plan_name: planName });
 }
 
-/* Scroll Depth */
+/* Scroll depth — goal names encode depth so Metrica can track each separately */
 (function () {
   const fired = new Set();
   window.addEventListener("scroll", function () {
-    const pct = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
-    [25, 50, 75, 90, 100].forEach(m => {
-      if (pct >= m && !fired.has(m)) { fired.add(m); gaEvent("scroll_depth", { depth: m }); }
+    const pct = Math.round(
+      (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+    );
+    [25, 50, 75, 90].forEach(m => {
+      if (pct >= m && !fired.has(m)) { fired.add(m); ymEvent("scroll_depth_" + m); }
     });
   }, { passive: true });
 })();
@@ -605,7 +628,9 @@ function trackPricing(planName) {
 (function () {
   if (!window.IntersectionObserver) return;
   const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) gaEvent("section_view", { section: e.target.id }); });
+    entries.forEach(e => {
+      if (e.isIntersecting) ymEvent("section_view", { section: e.target.id });
+    });
   }, { threshold: 0.35 });
   document.querySelectorAll("section[id]").forEach(s => obs.observe(s));
 })();

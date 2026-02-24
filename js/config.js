@@ -4,20 +4,27 @@
  * │  THIS IS YOUR MAIN EDIT FILE.                               │
  * └─────────────────────────────────────────────────────────────┘
  *
- * CHANGES vs previous version:
- *  + HERO_IMAGE            — hero photo path (was hardcoded in HTML)
+ *  + HERO_IMAGE            — hero photo path
  *  + PARTNERS_HERO_IMAGE   — partners page hero photo path
- *  + HERO_COIN_AMOUNT      — coin balance (was hardcoded 150)
- *  + HERO_BOOKINGS         — 3 booking cards (was hardcoded robotics only)
- *  + APP_SCREENSHOTS       — 4 screenshot paths (was hardcoded placeholder divs)
- *  + PARTNER_DASHBOARD     — partner hero card values (was hardcoded)
+ *  + HERO_COIN_AMOUNT      — coin balance shown in hero card
+ *  + HERO_BOOKINGS         — 3 booking cards in hero visual
+ *  + APP_SCREENSHOTS       — 4 screenshot paths (partners page)
+ *  + PARTNER_DASHBOARD     — partner hero floating card values
  *  + PARTNER_FORM_ENDPOINT — Google Apps Script URL (see setup/)
+ *
+ * ANALYTICS:
+ *  Yandex Metrica replaces Google Analytics.
+ *  1. Go to https://metrika.yandex.com and create a counter.
+ *  2. Copy the numeric counter ID (e.g. 98765432).
+ *  3. Paste it below as YM_ID.
  */
 
 const LUMI_CONFIG = {
 
-  // ── Google Analytics 4 ──────────────────────────────────────
-  GA_ID: "G-XXXXXXXXXX",
+  // ── Yandex Metrica ───────────────────────────────────────────
+  // Replace 0 with your counter ID from https://metrika.yandex.com
+  // Example: YM_ID: 98765432,
+  YM_ID: 106987893,
 
   // ── Primary CTA: Web App ────────────────────────────────────
   WEBAPP_URL: "https://app.lumipass.uz/en",

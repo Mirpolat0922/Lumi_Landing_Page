@@ -34,26 +34,34 @@
   <link rel="icon" type="image/svg+xml" href="assets/logos/logo-lumi.png" />
   <link rel="apple-touch-icon"           href="assets/logos/logo-lumi.png" />
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-  </script>
+  <!-- ── Yandex Metrica ────────────────────────────────── -->
+  <!-- YM_ID is set in js/config.js — edit it there        -->
+  <!-- Counter is initialised in the body after config.js  -->
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<!-- GA dynamic inject -->
+<!-- ── Yandex Metrica counter — loaded from config ──────── -->
 <script src="js/config.js"></script>
 <script>
   (function(){
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + LUMI_CONFIG.GA_ID;
-    document.head.appendChild(s);
-    s.onload = function(){ gtag('config', LUMI_CONFIG.GA_ID); };
+    if (!LUMI_CONFIG.YM_ID) return;
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0];
+      k.async=1;k.src=r;a.parentNode.insertBefore(k,a);
+    })(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+    ym(LUMI_CONFIG.YM_ID,"init",{
+      clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true
+    });
   })();
+</script>
+<noscript><div><img src="" id="ym-ns" style="position:absolute;left:-9999px" alt=""/></div></noscript>
+<script>
+  var _ns=document.getElementById("ym-ns");
+  if(_ns&&LUMI_CONFIG.YM_ID) _ns.src="https://mc.yandex.ru/watch/"+LUMI_CONFIG.YM_ID;
 </script>
 
 <!-- ════════════════════════════════════════════════════════
@@ -213,7 +221,7 @@
           <div id="app-screenshot-ph-1" class="us-photo-ph" style="background:var(--brand-light);color:var(--brand);">
             📱 Replace:<br>screenshot-register.jpg
           </div>
-          <img id="app-screenshot-1" src="assets/images/screenshot-register.jpg" alt="App registration screen" loading="lazy" />
+          <img id="app-screenshot-1" src="assets/images/screenshot-register.jpeg" alt="App registration screen" loading="lazy" />
         </div>
         <div class="us-body">
           <div class="us-num">1</div>
@@ -226,7 +234,7 @@
           <div id="app-screenshot-ph-2" class="us-photo-ph" style="background:var(--gold-light);color:#8B6300;">
             📱 Replace:<br>screenshot-browse.jpg
           </div>
-          <img id="app-screenshot-2" src="assets/images/screenshot-browse.svg" alt="App browse screen" loading="lazy" />
+          <img id="app-screenshot-2" src="assets/images/screenshot-browse.jpeg" alt="App browse screen" loading="lazy" />
         </div>
         <div class="us-body">
           <div class="us-num">2</div>
@@ -239,7 +247,7 @@
           <div id="app-screenshot-ph-3" class="us-photo-ph" style="background:var(--teal-light);color:#0D9488;">
             📱 Replace:<br>screenshot-book.jpg
           </div>
-          <img id="app-screenshot-3" src="assets/images/screenshot-book.svg" alt="App booking screen" loading="lazy" />
+          <img id="app-screenshot-3" src="assets/images/screenshot-book.jpeg" alt="App booking screen" loading="lazy" />
         </div>
         <div class="us-body">
           <div class="us-num">3</div>
@@ -250,7 +258,7 @@
       <div class="user-step reveal d4">
         <div class="us-photo">
           <div id="app-screenshot-ph-4" class="us-photo-ph" style="background:var(--coral-light);color:#C0392B;">
-            📱 Replace:<br><screenshot-qr class="webp"></screenshot-qr>
+            📱 Replace:<br>screenshot-qr.webp
           </div>
           <img id="app-screenshot-4" src="assets/images/screenshot-qr.webp" alt="App QR scan screen" loading="lazy" />
         </div>
