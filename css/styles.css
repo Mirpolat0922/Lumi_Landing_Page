@@ -601,11 +601,11 @@ footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,2
 .us-photo {
   width: 80%;
   max-width: 220px;
-  aspect-ratio: 760 / 1380;
+  aspect-ratio: 9 / 19.5;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 18px;
   box-shadow:
     0 10px 30px rgba(0,0,0,.15),
     0 4px 10px rgba(0,0,0,.10);
@@ -658,14 +658,14 @@ footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,2
 
 @media (max-width: 900px) {
   .us-photo {
-    width: 75%;
+    width: 90%;
     max-width: 160px;
   }
 }
 
 @media (max-width: 520px) {
   .us-photo {
-    width: 75%;
+    width: 90%;
     max-width: 130px;
   }
 }
