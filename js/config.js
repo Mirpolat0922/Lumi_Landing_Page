@@ -53,7 +53,7 @@ const LUMI_CONFIG = {
     "assets/images/screenshot-register.jpeg",  // Step 1: register/sign-up
     "assets/images/screenshot-browse.jpeg",    // Step 2: browse centers
     "assets/images/screenshot-book.jpeg",      // Step 3: book activity
-    "assets/images/screenshot-qr.svg",        // Step 4: QR code / check-in
+    "assets/images/screenshot-qr.webp",        // Step 4: QR code / check-in
   ],
 
   // ── Hero Floating Cards (index.html) ────────────────────────

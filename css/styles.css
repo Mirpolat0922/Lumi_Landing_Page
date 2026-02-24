@@ -599,52 +599,30 @@ footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,2
 }
 
 .us-photo {
-  width: 100%;
+  width: 80%;
   max-width: 220px;
-  aspect-ratio: 9 / 19.5;
+  aspect-ratio: 760 / 1380;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background: #000;
-  border: 10px solid #1a1a1a;
-  border-radius: 40px;
+  border-radius: 16px;
   box-shadow:
-    0 40px 80px rgba(0,0,0,.30),
-    0 20px 35px rgba(0,0,0,.20),
-    inset 0 0 0 1px rgba(255,255,255,.08);
+    0 10px 30px rgba(0,0,0,.15),
+    0 4px 10px rgba(0,0,0,.10);
   flex-shrink: 0;
+  background: #FDFAF5;
 }
 
-.us-photo::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 42%;
-  height: 24px;
-  background: #1a1a1a;
-  border-radius: 20px;
-  z-index: 2;
-}
-
+.us-photo::before,
 .us-photo::after {
-  content: "";
-  position: absolute;
-  top: 80px;
-  right: -14px;
-  width: 4px;
-  height: 60px;
-  background: #2a2a2a;
-  border-radius: 0 3px 3px 0;
-  box-shadow: 0 70px 0 #2a2a2a;
+  display: none;  /* remove iPhone notch and buttons */
 }
 
 .us-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center top;
   display: block;
 }
 
@@ -677,22 +655,18 @@ footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,2
   margin: 0 auto 0.75rem;
 }
 
+
 @media (max-width: 900px) {
-  .user-steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .us-photo {
-    max-width: 180px;
+    width: 75%;
+    max-width: 160px;
   }
 }
 
 @media (max-width: 520px) {
-  .user-steps {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
   .us-photo {
-    max-width: 140px;
+    width: 75%;
+    max-width: 130px;
   }
 }
 
