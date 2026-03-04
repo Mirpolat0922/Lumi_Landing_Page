@@ -63,7 +63,7 @@ body::before {
 }
 
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.nav-logo-img { height: 36px; width: auto; }
+.nav-logo-img { height: 44px; width: auto; }
 .nav-logo-text {
   font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.6rem;
   background: linear-gradient(135deg, var(--brand), var(--coral));
@@ -401,7 +401,7 @@ body::before {
 footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,255,.55); }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
 .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 44px; margin-bottom: 48px; }
-.footer-logo-img { height: 34px; width: auto; margin-bottom: 12px; }
+.footer-logo-img { height: 54px; width: auto; margin-bottom: 14px; }
 .footer-logo-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.7rem; background: linear-gradient(135deg, var(--brand), var(--coral)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: block; margin-bottom: 12px; line-height: 1; }
 .footer-brand p { font-size: .88rem; line-height: 1.75; max-width: 260px; font-weight: 500; }
 .footer-col h5 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: .93rem; color: #fff; margin-bottom: 14px; }
@@ -489,7 +489,7 @@ footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,2
 /* ══════════════════════════════════════════════════════════════
    CHANGE: nav logo — bigger (46px) since "Lumi" text is removed
    ══════════════════════════════════════════════════════════════ */
-.nav-logo-img { height: 46px; width: auto; }
+.nav-logo-img { height: 50px; width: auto; }
 /* (was 36px with text beside it; text span removed in both pages) */
 
 /* ══════════════════════════════════════════════════════════════
@@ -759,6 +759,16 @@ footer { background: var(--navy); padding: 68px 48px 40px; color: rgba(255,255,2
   font-weight: 700; font-size: .93rem; cursor: pointer; margin-top: 6px; transition: all .2s;
 }
 .modal-success-close:hover { background: var(--brand); color: #fff; }
+
+/* ══════════════════════════════════════════════════════════════
+   ACTIVITY PLACEHOLDER IMAGES — hide until real image is set
+   ══════════════════════════════════════════════════════════════ */
+.activity-photo[src=""],
+.activity-photo:not([src]) {
+  min-height: 140px;
+  background: linear-gradient(135deg, var(--brand-pale) 0%, #ede9fe 100%);
+  display: block;
+}
 
 /* ══════════════════════════════════════════════════════════════
    RESPONSIVE

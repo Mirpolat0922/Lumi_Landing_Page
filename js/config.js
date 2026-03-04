@@ -38,6 +38,20 @@ const LUMI_CONFIG = {
   // Leave "" to fall back to opening the Telegram bot.
   PARTNER_FORM_ENDPOINT: "https://script.google.com/macros/s/AKfycbwuwZEi0hvb6fkJETi23LxedZwBXqqqjG76PHh0Pz7grIFSI7_OZLeCWEbHwYZtCLsjJg/exec",
 
+  // ── Legal Docs ───────────────────────────────────────────────
+  // Set to the filename of your privacy policy and public offer files.
+  // Drop the files next to index.html and update the paths here.
+  PRIVACY_URL: "privacy-policy.html",
+  OFFER_URL:   "public-offer.html",
+
+  // ── Extra Activity Images (slots 7-9) ────────────────────────
+  // Upload images and set paths here. Leave empty string to hide the card image.
+  ACTIVITY_IMAGES: {
+    7: "",   // Tennis     — e.g. "assets/images/activity-tennis.jpg"
+    8: "",   // Languages  — e.g. "assets/images/activity-languages.jpg"
+    9: "",   // Maths      — e.g. "assets/images/activity-maths.jpg"
+  },
+
   // ── Social & Contact Links ───────────────────────────────────
   // Set any value to "" to hide that item in the footer.
   SOCIAL: {

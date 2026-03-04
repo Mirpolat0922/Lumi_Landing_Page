@@ -6,7 +6,7 @@
 
   <!-- ── SEO: Core ──────────────────────────────────────── -->
   <title>Lumi — Bolalar uchun Mashg'ulotlar Platformasi | Toshkent</title>
-  <meta name="description" content="Lumi — 0-16 yoshli bolalar uchun sport, ijod, ta'lim va ko'ngil ochar mashg'ulotlari. Toshkentdagi 50+ hamkor markazda 100+ yo'nalish. Lumi Coin orqali bron qiling." />
+  <meta name="description" content="Lumi — 0-16 yoshli bolalar uchun sport, ijod, ta'lim va ko'ngil ochar mashg'ulotlari. Toshkentdagi 30+ hamkor markazda 50+ yo'nalish. Lumi Coin orqali bron qiling." />
   <meta name="keywords" content="bolalar mashg'ulotlari, bolalar sport Toshkent, robototexnika, suzish, raqs, futbol, Lumi, LumiPass, детские занятия Ташкент" />
   <meta name="author" content="Lumi" />
   <meta name="robots" content="index, follow" />
@@ -16,7 +16,7 @@
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://lumipass.uz/" />
   <meta property="og:title"       content="Lumi — Bolalar uchun №1 Mashg'ulotlar Platformasi" />
-  <meta property="og:description" content="Toshkentdagi 50+ markazda 100+ mashg'ulot. Sport, ijod, ta'lim — hammasi bir joyda." />
+  <meta property="og:description" content="Toshkentdagi 30+ markazda 50+ mashg'ulot. Sport, ijod, ta'lim — hammasi bir joyda." />
   <meta property="og:image"       content="https://lumipass.uz/assets/images/og-image.png" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
@@ -28,7 +28,7 @@
   <!-- ── SEO: Twitter Card ─────────────────────────────── -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Lumi — Bolalar uchun №1 Mashg'ulotlar Platformasi" />
-  <meta name="twitter:description" content="Toshkentdagi 50+ markazda 100+ mashg'ulot. Sport, ijod, ta'lim — hammasi bir joyda." />
+  <meta name="twitter:description" content="Toshkentdagi 30+ markazda 50+ mashg'ulot. Sport, ijod, ta'lim — hammasi bir joyda." />
   <meta name="twitter:image"       content="https://lumipass.uz/assets/images/og-image.png" />
 
   <!-- ── SEO: Schema.org ───────────────────────────────── -->
@@ -122,9 +122,9 @@
       <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
       <button class="lang-btn"        data-lang="ru" onclick="setLang('ru')">RU</button>
     </div>
-    <a href="#" id="nav-webapp-btn" class="btn btn-primary"
-       onclick="trackWebApp('navbar'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;"
-       target="_blank" rel="noopener" data-i18n="nav_cta">Ilovani Ochish</a>
+    <a href="#" id="nav-telegram-btn" class="btn btn-primary"
+       onclick="trackTelegram('navbar'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;"
+       target="_blank" rel="noopener" data-i18n="nav_cta">Boshlash →</a>
   </div>
 
   <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
@@ -156,21 +156,17 @@
 
       <div class="hero-ctas">
         <div class="hero-cta-row">
-          <!-- PRIMARY: Web App -->
+          <!-- PRIMARY: Telegram only -->
           <a href="#" class="btn btn-primary btn-primary-lg"
-             onclick="trackWebApp('hero'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;"
-             target="_blank" rel="noopener" data-i18n="hero_btn_web">Ilovani Ochish</a>
-          <!-- SECONDARY: Telegram -->
-          <a href="#" class="btn btn-secondary"
              onclick="trackTelegram('hero'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;"
-             target="_blank" rel="noopener" data-i18n="hero_btn_tg">Telegram orqali</a>
+             target="_blank" rel="noopener" data-i18n="hero_btn_web">Bepul Boshlash →</a>
         </div>
         <p class="hero-cta-note" data-i18n="hero_note">🔒 Bepul kirish — ro'yxatdan o'tish shart emas</p>
       </div>
 
       <div class="hero-stats">
-        <div class="hero-stat"><div class="sn">50+</div><div class="sl" data-i18n="stat_partners">Hamkorlar</div></div>
-        <div class="hero-stat"><div class="sn">100+</div><div class="sl" data-i18n="stat_dirs">Yo'nalishlar</div></div>
+        <div class="hero-stat"><div class="sn">30+</div><div class="sl" data-i18n="stat_partners">Hamkorlar</div></div>
+        <div class="hero-stat"><div class="sn">50+</div><div class="sl" data-i18n="stat_dirs">Yo'nalishlar</div></div>
         <div class="hero-stat"><div class="sn">0–16</div><div class="sl" data-i18n="stat_age">Yosh oralig'i</div></div>
         <div class="hero-stat"><div class="sn">24/7</div><div class="sl" data-i18n="stat_support">Qo'llab-quvvatlash</div></div>
       </div>
@@ -246,7 +242,7 @@
      PARTNER LOGOS STRIP
      ════════════════════════════════════════════════════════ -->
 <section id="partners-strip" aria-label="Partner centers">
-  <p class="partners-strip-label" data-i18n="partners_title">50+ hamkor markaz biz bilan ishlaydi</p>
+  <p class="partners-strip-label" data-i18n="partners_title">30+ hamkor markaz biz bilan ishlaydi</p>
   <div class="partners-track-wrap">
     <!-- Built dynamically from LUMI_CONFIG.PARTNERS in main.js -->
     <div class="partners-track" id="partnersTrack"></div>
@@ -308,62 +304,83 @@
   <div class="section-inner section-pad">
     <div class="section-header reveal">
       <span class="section-tag tag-coral" data-i18n="act_tag">🏢 Markazlar</span>
-      <h2><span data-i18n="act_h2a">100+ yo'nalish, </span><span class="hl" data-i18n="act_h2b">50+ hamkor markaz</span></h2>
+      <h2><span data-i18n="act_h2a">50+ yo'nalish, </span><span class="hl" data-i18n="act_h2b">30+ hamkor markaz</span></h2>
       <p data-i18n="act_p">Lumi siz uchun Toshkentdagi eng yaxshi bolalar markazlarini jamladi. Bir joydan toping, bron qiling — markaz sizni kutadi.</p>
     </div>
     <div class="activities-grid">
       <article class="activity-card reveal d1">
         <img src="assets/images/activity-robotics.png" alt="Robototexnika markazlari" class="activity-photo" loading="lazy" />
         <div class="activity-body">
-          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
           <h4 data-i18n="a1h">Robototexnika</h4>
           <p data-i18n="a1p">Texnologiyani sevadigan bolalar uchun. Toshkentdagi robototexnika markazlarini toping va bron qiling.</p>
-          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
         </div>
       </article>
       <article class="activity-card reveal d2">
         <img src="assets/images/activity-art.jpg" alt="Ijodiy san'at markazlari" class="activity-photo" loading="lazy" />
         <div class="activity-body">
-          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
           <h4 data-i18n="a2h">Ijodiy darslar</h4>
           <p data-i18n="a2p">San'at, musiqa, rasm — hamkor ijod markazlarida farzandingizning iqtidorini kashf eting.</p>
-          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
         </div>
       </article>
       <article class="activity-card reveal d3">
         <img src="assets/images/activity-playground.png" alt="Bolalar o'yingohlari" class="activity-photo" loading="lazy" />
         <div class="activity-body">
-          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
           <h4 data-i18n="a3h">Bolalar o'yingohlari</h4>
           <p data-i18n="a3p">Sifatli va xavfsiz o'yingohlarda dam olish. Markaz tanlang va bron qiling.</p>
-          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
         </div>
       </article>
       <article class="activity-card reveal d1">
         <img src="assets/images/activity-dance.png" alt="Raqs va gimnastika markazlari" class="activity-photo" loading="lazy" />
         <div class="activity-body">
-          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
           <h4 data-i18n="a4h">Raqs va gimnastika</h4>
           <p data-i18n="a4p">Professional raqs va gimnastika markazlari — chiroyli qomat va moslashuvchanlik uchun.</p>
-          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
         </div>
       </article>
       <article class="activity-card reveal d2">
         <img src="assets/images/activity-swimming.png" alt="Suzish markazlari" class="activity-photo" loading="lazy" />
         <div class="activity-body">
-          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
           <h4 data-i18n="a5h">Suzish</h4>
           <p data-i18n="a5p">Malakali murabbiylar bilan suzishni o'rganish. Bolalar basseynlarini toping va yoziling.</p>
-          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
         </div>
       </article>
       <article class="activity-card reveal d3">
         <img src="assets/images/activity-football.png" alt="Futbol maktablari" class="activity-photo" loading="lazy" />
         <div class="activity-body">
-          <span class="activity-centers-tag">🏢 <span data-i18n="act_at_centers">markazlarda mavjud</span></span>
           <h4 data-i18n="a6h">Futbol</h4>
           <p data-i18n="a6p">Jamoaviy sport — kuch va do'stlik. Toshkentdagi futbol maktablarini bir joydan toping.</p>
-          <a href="#" class="activity-cta-link" onclick="trackWebApp('activities'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Markazlarni Ko'rish →</a>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d1">
+        <!-- img src filled by buildActivityImages() from LUMI_CONFIG.ACTIVITY_IMAGES[7] — upload your image and set path in config.js -->
+        <img id="activity-img-7" src="" alt="Tennis markazlari" class="activity-photo activity-img-placeholder" loading="lazy" />
+        <div class="activity-body">
+          <h4 data-i18n="a7h">Tennis</h4>
+          <p data-i18n="a7p">Professional tennis markazlari — koordinatsiya va strategik fikrlash uchun.</p>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d2">
+        <!-- img src filled by buildActivityImages() from LUMI_CONFIG.ACTIVITY_IMAGES[8] — upload your image and set path in config.js -->
+        <img id="activity-img-8" src="" alt="Tillar markazlari" class="activity-photo activity-img-placeholder" loading="lazy" />
+        <div class="activity-body">
+          <h4 data-i18n="a8h">Tillar</h4>
+          <p data-i18n="a8p">Ingliz, rus va boshqa tillar — malakali o'qituvchilar bilan sifatli kurslar.</p>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
+        </div>
+      </article>
+      <article class="activity-card reveal d3">
+        <!-- img src filled by buildActivityImages() from LUMI_CONFIG.ACTIVITY_IMAGES[9] — upload your image and set path in config.js -->
+        <img id="activity-img-9" src="" alt="Matematika va mantiq markazlari" class="activity-photo activity-img-placeholder" loading="lazy" />
+        <div class="activity-body">
+          <h4 data-i18n="a9h">Matematika va mantiq</h4>
+          <p data-i18n="a9p">Aql va mantiqiy fikrlash markazlari — farzandingiz akademik imkoniyatlarini kengaytiring.</p>
+          <a href="#" class="activity-cta-link" onclick="trackTelegram('activities'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="act_book">Ko'rish →</a>
         </div>
       </article>
     </div>
@@ -379,8 +396,8 @@
       <h2 style="color:#fff;"><span data-i18n="stats_h2a">Raqamlarda — </span><span style="color:var(--gold);" data-i18n="stats_h2b">Lumi platformasi</span></h2>
     </div>
     <div class="stats-grid">
-      <div class="stat-item reveal d1"><span class="stat-icon">🏢</span><div class="stat-value" data-i18n="s1v">50+</div><div class="stat-desc" data-i18n="s1d">Hamkorlar</div></div>
-      <div class="stat-item reveal d2"><span class="stat-icon">🎯</span><div class="stat-value" data-i18n="s2v">100+</div><div class="stat-desc" data-i18n="s2d">Yo'nalishlar</div></div>
+      <div class="stat-item reveal d1"><span class="stat-icon">🏢</span><div class="stat-value" data-i18n="s1v">30+</div><div class="stat-desc" data-i18n="s1d">Hamkorlar</div></div>
+      <div class="stat-item reveal d2"><span class="stat-icon">🎯</span><div class="stat-value" data-i18n="s2v">50+</div><div class="stat-desc" data-i18n="s2d">Yo'nalishlar</div></div>
       <!-- CHANGE: replaced 🪙 emoji with Lumi coin image (set in assets/logos/logo-coin.svg) -->
       <div class="stat-item reveal d3"><img src="assets/logos/logo-coin.svg" alt="Lumi Coin" class="stat-coin-img" /><div class="stat-value" data-i18n="s3v">6+</div><div class="stat-desc" data-i18n="s3d">To'plamlar</div></div>
       <div class="stat-item reveal d4"><span class="stat-icon">💬</span><div class="stat-value" data-i18n="s4v">24/7</div><div class="stat-desc" data-i18n="s4d">Qo'llab-quvvatlash</div></div>
@@ -401,7 +418,7 @@
     <div class="steps-grid">
       <div class="step-card reveal d1"><div class="step-num">1</div><span class="step-emoji">📱</span><h4 data-i18n="s1h">Ro'yxatdan o'ting</h4><p data-i18n="s1p">Telegram bot orqali tez va oson ro'yxatdan o'ting.</p></div>
       <div class="step-card reveal d2"><div class="step-num">2</div><span class="step-emoji">🪙</span><h4 data-i18n="s2h">To'plam oling</h4><p data-i18n="s2p">Sizga mos Lumi Coin to'plamini tanlang va xarid qiling.</p></div>
-      <div class="step-card reveal d3"><div class="step-num">3</div><span class="step-emoji">🔍</span><h4 data-i18n="s3h">Mashg'ulot tanlang</h4><p data-i18n="s3p">100+ yo'nalish orasidan farzandingizga mosini toping.</p></div>
+      <div class="step-card reveal d3"><div class="step-num">3</div><span class="step-emoji">🔍</span><h4 data-i18n="s3h">Mashg'ulot tanlang</h4><p data-i18n="s3p">30+ hamkor markaz orasidan farzandingizga mosini toping.</p></div>
       <div class="step-card reveal d4"><div class="step-num">4</div><span class="step-emoji">🌟</span><h4 data-i18n="s4h">Kuzating va sevining!</h4><p data-i18n="s4p">Farzandingiz rivojlanishini platforma orqali kuzatib boring.</p></div>
     </div>
   </div>
@@ -424,7 +441,7 @@
         <div class="plan-dur"  data-i18n="p1d">15 kun</div>
         <div class="plan-price"><div class="plan-amount">129 000</div><div class="plan-currency">UZS</div></div>
         <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">50</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
-        <a href="#" class="plan-btn" onclick="trackPricing('Qadam'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+        <a href="#" class="plan-btn" onclick="trackPricing('Qadam'); trackTelegram('pricing'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
       </div>
 
       <div class="pricing-card reveal d2">
@@ -432,7 +449,7 @@
         <div class="plan-dur"  data-i18n="p2d">1 oy</div>
         <div class="plan-price"><div class="plan-amount">379 000</div><div class="plan-currency">UZS</div></div>
         <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">150</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
-        <a href="#" class="plan-btn" onclick="trackPricing('Kashfiyot'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+        <a href="#" class="plan-btn" onclick="trackPricing('Kashfiyot'); trackTelegram('pricing'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
       </div>
 
       <div class="pricing-card reveal d3">
@@ -440,7 +457,7 @@
         <div class="plan-dur"  data-i18n="p3d">45 kun</div>
         <div class="plan-price"><div class="plan-amount">679 000</div><div class="plan-currency">UZS</div></div>
         <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">270</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
-        <a href="#" class="plan-btn" onclick="trackPricing('Sarguzasht'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+        <a href="#" class="plan-btn" onclick="trackPricing('Sarguzasht'); trackTelegram('pricing'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
       </div>
 
       <div class="pricing-card featured reveal d1">
@@ -449,7 +466,7 @@
         <div class="plan-dur"  data-i18n="p4d">2 oy</div>
         <div class="plan-price"><div class="plan-amount">999 000</div><div class="plan-currency">UZS</div></div>
         <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">400</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
-        <a href="#" class="plan-btn" onclick="trackPricing('Parvoz'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+        <a href="#" class="plan-btn" onclick="trackPricing('Parvoz'); trackTelegram('pricing'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
       </div>
 
       <div class="pricing-card reveal d2">
@@ -457,7 +474,7 @@
         <div class="plan-dur"  data-i18n="p5d">3 oy</div>
         <div class="plan-price"><div class="plan-amount">1 490 000</div><div class="plan-currency">UZS</div></div>
         <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">600</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
-        <a href="#" class="plan-btn" onclick="trackPricing('Ilhom'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+        <a href="#" class="plan-btn" onclick="trackPricing('Ilhom'); trackTelegram('pricing'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
       </div>
 
       <div class="pricing-card reveal d3">
@@ -465,7 +482,7 @@
         <div class="plan-dur"  data-i18n="p6d">6 oy</div>
         <div class="plan-price"><div class="plan-amount">3 459 000</div><div class="plan-currency">UZS</div></div>
         <div class="coin-info"><img src="assets/logos/logo-coin.svg" alt="coin" class="ci-img"/><span class="ci-count">1 400</span><span class="ci-text" data-i18n="coin_label">Lumi Tangalari</span></div>
-        <a href="#" class="plan-btn" onclick="trackPricing('Kelajak'); trackWebApp('pricing'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
+        <a href="#" class="plan-btn" onclick="trackPricing('Kelajak'); trackTelegram('pricing'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;" target="_blank" rel="noopener" data-i18n="plan_btn">Boshlash</a>
       </div>
 
     </div>
@@ -503,17 +520,13 @@
       <div class="cta-tag" data-i18n="cta_tag">🚀 Hoziroq boshlang</div>
       <h2 data-i18n="cta_h2">Farzandingizning yorqin kelajagi shu yerda!</h2>
       <p data-i18n="cta_p">Toshkentdagi minglab oilalar qatori Lumi orqali farzandlaringiz uchun eng yaxshi mashg'ulotlarni kashf eting.</p>
-      <p class="cta-primary-note" data-i18n="cta_note">⭐ Eng qulay usul — to'g'ridan-to'g'ri veb-ilovamizdan boshlang</p>
+      
       <div class="cta-buttons">
         <div class="cta-row">
-          <!-- PRIMARY: big gold Web App button -->
+          <!-- PRIMARY: Telegram (only option) -->
           <a href="#" class="btn btn-gold"
-             onclick="trackWebApp('cta'); this.href=LUMI_CONFIG.WEBAPP_URL; return true;"
-             target="_blank" rel="noopener" data-i18n="cta_webapp">Veb-ilovani Ochish</a>
-          <!-- SECONDARY: Telegram -->
-          <a href="#" class="btn btn-tg-dark"
              onclick="trackTelegram('cta'); this.href=LUMI_CONFIG.TELEGRAM_BOT_URL; return true;"
-             target="_blank" rel="noopener" data-i18n="cta_tg">Telegram orqali</a>
+             target="_blank" rel="noopener" data-i18n="cta_webapp">Hoziroq Boshlash →</a>
         </div>
         <p class="cta-sub" data-i18n="cta_sub">Bepul · Ro'yxatdan o'tish shart emas</p>
       </div>
@@ -529,7 +542,6 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="assets/logos/logo-lumi.png" alt="Lumi" class="footer-logo-img" />
-        <span class="footer-logo-text">Lumi</span>
         <p data-i18n="footer_tagline">Toshkentdagi bolalar uchun sport, san'at, ta'lim va ko'ngil ochar — hammasi bir joyda.</p>
       </div>
       <div class="footer-col">
@@ -542,8 +554,8 @@
       </div>
       <div class="footer-col">
         <h5 data-i18n="footer_legal">Huquqiy</h5>
-        <a href="#" data-i18n="footer_privacy">Maxfiylik siyosati</a>
-        <a href="#" data-i18n="footer_offer">Ommaviy oferta</a>
+        <a href="privacy-policy.html" class="footer-privacy-link" data-i18n="footer_privacy">Maxfiylik siyosati</a>
+        <a href="public-offer.html" class="footer-offer-link" data-i18n="footer_offer">Ommaviy oferta</a>
       </div>
       <!-- CHANGE: emoji icons (📞 ✈ 📷) replaced with proper SVG icons.
            Text content filled by buildFooterLinks() in main.js from LUMI_CONFIG.SOCIAL -->

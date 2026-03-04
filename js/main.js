@@ -27,7 +27,7 @@ const T = {
     nav_faq:        "Savollar",
     nav_partners:   "Hamkorlar",
     nav_contact:    "Aloqa",
-    nav_cta:        "Ilovani Ochish",
+    nav_cta:        "Boshlash →",
 
     // Hero
     hero_badge:   "Toshkentning №1 bolalar platformasi",
@@ -35,8 +35,8 @@ const T = {
     hero_h1b:     "yorqin kelajagi",
     hero_h1c:     " shu yerda boshlanadi",
     hero_p:       "Toshkentdagi 50+ hamkor markazni bir joydan toping va bron qiling — sport, san'at, ta'lim va ko'ngil ochar. Lumi Coin orqali.",
-    hero_btn_web: "Ilovani Ochish",
-    hero_btn_tg:  "Telegram orqali",
+    hero_btn_web: "Bepul Boshlash →",
+    hero_btn_tg:  "",
     hero_note:    "🔒 Bepul kirish — ro'yxatdan o'tish shart emas",
     stat_partners:"Hamkorlar",
     stat_dirs:    "Yo'nalishlar",
@@ -44,20 +44,26 @@ const T = {
     stat_support: "Qo'llab-quvvatlash",
 
     // Floating cards
-    hfc_activity: "Bron qilindi",
+    hfc_activity: "Bronlar",
     hfc_booked:   "Tasdiqlandi ✓",
     hfc_balance:  "Balansingiz",
     hfc_coins:    "Lumi Tangalari",
+    hfc_map_label: "Hamkor Markazlar",
+    hfc_mgmt_month: "Mart",
+    hfc_map_centers: "hamkor markaz",
+    hfc_mgmt_label: "Bronlarim",
+    hfc_mgmt_pending: "Yangi bron",
+    hfc_status_ok: "✓",
 
     // Partners strip
-    partners_title: "50+ hamkor markaz biz bilan ishlaydi",
+    partners_title: "30+ hamkor markaz biz bilan ishlaydi",
 
     // Features
     feat_tag:  "Nega Lumi?",
     feat_h2a:  "Farzandingizga kerak bo'lgan hamma narsa — ",
     feat_h2b:  "bir joyda",
     feat_p:    "Lumi sizni Toshkentdagi tekshirilgan markazlar bilan bog'laydi — sport, ijod, ta'lim hammasi bir platformada.",
-    f1h: "Hammasi bir joyda",     f1p: "Bir qulay platforma orqali Toshkentdagi 50+ markaz va 100+ yo'nalishdan farzandingizga mosini toping.",
+    f1h: "Hammasi bir joyda",     f1p: "Bir qulay platforma orqali Toshkentdagi 30+ markaz va 50+ yo'nalishdan farzandingizga mosini toping.",
     f2h: "Vaqtingizni tejang",    f2p: "Darslar va mashg'ulotlarni osonlik bilan rejalashtiring. Barcha xizmatlar va eslatmalar bir platformada.",
     f3h: "Ishonchli hamkorlar",   f3p: "Faqat tekshirilgan va sifatli markazlar bilan ishlаymiz. Ota-onalar izohlari to'g'ri tanlov qilishga yordam beradi.",
     f4h: "Rivojlanishni kuzating",f4p: "Farzandingiz yutuqlarini kuzating va shaxsiylashtirilgan tavsiyalar oling.",
@@ -66,23 +72,26 @@ const T = {
 
     // Activities — UPDATED: bridge/marketplace messaging
     act_tag:       "Markazlar",
-    act_h2a:       "100+ yo'nalish, ",
-    act_h2b:       "50+ hamkor markaz",
-    act_p:         "Lumi siz uchun Toshkentdagi eng yaxshi bolalar markazlarini jamladi. Bir joydan toping, bron qiling — markaz sizni kutadi.",
+    act_h2a:       "50+ yo'nalish, ",
+    act_h2b:       "30+ hamkor markaz",
+    act_p:         "Lumi siz uchun Toshkentdagi eng yaxshi bolalar markazlarini jamladi. 50+ yo'nalish, 30+ tekshirilgan markaz — bir joydan toping, bron qiling.",
     act_at_centers:"markazlarda mavjud",
-    act_book:      "Markazlarni Ko'rish →",
+    act_book:      "Ko'rish →",
     a1h: "Robototexnika",        a1p: "Texnologiyani sevadigan bolalar uchun. Toshkentdagi robototexnika markazlarini toping va bron qiling.",
     a2h: "Ijodiy darslar",       a2p: "San'at, musiqa, rasm — hamkor ijod markazlarida farzandingizning iqtidorini kashf eting.",
     a3h: "Bolalar o'yingohlari", a3p: "Sifatli va xavfsiz o'yingohlarda dam olish. Markaz tanlang va bron qiling.",
     a4h: "Raqs va gimnastika",   a4p: "Professional raqs va gimnastika markazlari — chiroyli qomat va moslashuvchanlik uchun.",
     a5h: "Suzish",               a5p: "Malakali murabbiylar bilan suzishni o'rganish. Bolalar basseynlarini toping va yoziling.",
     a6h: "Futbol",               a6p: "Jamoaviy sport — kuch va do'stlik. Toshkentdagi futbol maktablarini bir joydan toping.",
+    a7h: "Tennis",                a7p: "Professional tennis markazlari — koordinatsiya va strategik fikrlash uchun.",
+    a8h: "Tillar",                 a8p: "Ingliz, rus va boshqa tillar — malakali o'qituvchilar bilan sifatli kurslar.",
+    a9h: "Matematika va mantiq",   a9p: "Aql va mantiqiy fikrlash markazlari — farzandingiz akademik imkoniyatlarini kengaytiring.",
 
     // Stats
     stats_h2a: "Raqamlarda — ",
     stats_h2b: "Lumi platformasi",
-    s1v:"50+",  s1d:"Hamkorlar",
-    s2v:"100+", s2d:"Yo'nalishlar",
+    s1v:"30+",  s1d:"Hamkorlar",
+    s2v:"50+", s2d:"Yo'nalishlar",
     s3v:"6+",   s3d:"To'plamlar",
     s4v:"24/7", s4d:"Qo'llab-quvvatlash",
 
@@ -93,7 +102,7 @@ const T = {
     how_p:   "Farzandingizni mashg'ulotga yozish juda oson.",
     s1h:"Ro'yxatdan o'ting",  s1p:"Telegram bot orqali tez va oson ro'yxatdan o'ting.",
     s2h:"To'plam oling",      s2p:"Sizga mos Lumi Coin to'plamini tanlang va xarid qiling.",
-    s3h:"Markaz tanlang",     s3p:"50+ hamkor markaz orasidan farzandingizga mosini toping.",
+    s3h:"Markaz tanlang",     s3p:"30+ hamkor markaz orasidan farzandingizga mosini toping.",
     s4h:"Kuzating va sevining!", s4p:"Farzandingiz rivojlanishini platforma orqali kuzatib boring.",
 
     // Pricing
@@ -116,24 +125,24 @@ const T = {
     faq_h2a: "Ko'p so'raladigan ",
     faq_h2b: "savollar",
     faq_p:   "Savolingiz bormi? Javobimiz tayyor. Qo'shimcha savollar uchun Telegram orqali murojaat qiling.",
-    q1:"Lumi nima?",                    a1:"Lumi — 0 dan 16 yoshgacha bo'lgan bolalar uchun Toshkentdagi 50+ hamkor markazni birlashtirgan platforma. Siz markazlarni qidirmaysiz — Lumi ularni sizga tavsiya qiladi. Sport, ijod, ta'lim — hammasi bir joyda.",
+    q1:"Lumi nima?",                    a1:"Lumi — 0 dan 16 yoshgacha bo'lgan bolalar uchun Toshkentdagi 30+ hamkor markazni birlashtirgan platforma. Siz markazlarni qidirmaysiz — Lumi ularni sizga tavsiya qiladi. Sport, ijod, ta'lim — hammasi bir joyda.",
     q2:"Abonement bormi?",              a2:"Yo'q. Lumi Coin tizimi orqali faqat ishlatgan mashg'ulotlaringiz uchun to'laysiz. Kerak bo'lsa ko'p markaz orasida tanlash imkoniyati bor.",
     q3:"Lumi Tangalari qanday ishlaydi?",a3:"Lumi Tangalari — hamkor markazlardagi mashg'ulotlarga yozilish uchun raqamli birlik. Har bir markaz o'z narxini tangalarda belgilaydi. Bu sizga markazlar orasida erkin tanlov qilish imkonini beradi.",
     q4:"Ishlatilmagan tangalar saqlanadimi?", a4:"Yo'q, har bir to'plamning amal qilish muddati bor. Muddati tugagach, foydalanilmagan tangalar bekor qilinadi. Tangalarni faol ishlatish tavsiya etiladi.",
     q5:"Mashg'ulotga qanday yozilish mumkin?", a5:"Telegram botimizga o'ting — u veb-ilovamizni ochadi. U yerda barcha hamkor markazlarni ko'rib chiqib, birini tanlab, Lumi Tangalaringiz yordamida darhol band qilishingiz mumkin.",
-    q6:"Qanday mashg'ulotlar mavjud?",  a6:"Sport (karate, suzish, futbol...), ijodiy (san'at, musiqa, raqs...), ta'limiy (ingliz tili, mantiq, matematika...), rivojlantiruvchi va ko'ngilochar mashg'ulotlar — 100+ yo'nalish.",
+    q6:"Qanday mashg'ulotlar mavjud?",  a6:"Sport (karate, suzish, futbol...), ijodiy (san'at, musiqa, raqs...), ta'limiy (ingliz tili, mantiq, matematika...), rivojlantiruvchi va ko'ngilochar mashg'ulotlar — 50+ yo'nalish.",
 
     // Final CTA
     cta_tag:    "Hoziroq boshlang",
     cta_h2:     "Farzandingizning yorqin kelajagi shu yerda!",
     cta_p:      "Toshkentdagi minglab oilalar qatori Lumi orqali farzandlaringiz uchun eng yaxshi markazlarni kashf eting.",
-    cta_note:   "⭐ Eng qulay usul — to'g'ridan-to'g'ri veb-ilovamizdan boshlang",
-    cta_webapp: "Veb-ilovani Ochish",
+    cta_note:   "",
+    cta_webapp: "Hoziroq Boshlash →",
     cta_tg:     "Telegram orqali",
     cta_sub:    "Bepul · Ro'yxatdan o'tish shart emas",
 
     // Footer
-    footer_tagline:  "Toshkentdagi bolalar uchun sport, san'at, ta'lim va ko'ngil ochar — 50+ hamkor markaz, bir platforma.",
+    footer_tagline:  "Toshkentdagi bolalar uchun sport, san'at, ta'lim va ko'ngil ochar — 30+ hamkor markaz, bir platforma.",
     footer_company:  "Kompaniya",
     footer_legal:    "Huquqiy",
     footer_privacy:  "Maxfiylik siyosati",
@@ -149,7 +158,7 @@ const T = {
     pp_h1c:     " — atiga 20 daqiqada",
     pp_p:       "Lumi platformasiga qo'shiling va minglab ota-onalarga farzandlari uchun eng yaxshi markaz sifatida ko'rining.",
     pp_btn:     "Hamkor Bo'lish",
-    pp_stat1v:"50+",     pp_stat1d:"Hamkor markazlar",
+    pp_stat1v:"30+",     pp_stat1d:"Hamkor markazlar",
     pp_stat2v:"20 min",  pp_stat2d:"Ulash uchun vaqt",
     pp_stat3v:"+50%",    pp_stat3d:"O'rtacha daromad o'sishi",
 
@@ -176,7 +185,7 @@ const T = {
     hu1h:"Ro'yxatdan o'tishadi", hu1p:"Lumi ilovasini yuklab olib ro'yxatdan o'tishadi.",
     hu2h:"Markaz tanlashadi",    hu2p:"Bolalar markazlari va mashg'ulotlarni ko'rib chiqishadi.",
     hu3h:"Yozilishadi",          hu3p:"To'g'ridan-to'g'ri sizning markazingizga yozilishadi.",
-    hu4h:"Tashrif buyurishadi",  hu4p:"Kelishadi va QR-kodni skanerlashadi — to'lov avtomatik amalga oshadi.",
+    hu4h:"Bronlarini boshqarishadi",  hu4p:"Telegramda bronlarini ko'rib, jadvallarini boshqarish imkoniyati bor.",
 
     pp_why_tag: "Afzalliklar",
     pp_why_h2a: "Nega Lumi bilan ",
@@ -203,7 +212,7 @@ const T = {
     ps1h:"Platformaga ulaning",   ps1p:"Hamkorlik shartnomasini imzolab, 15-20 daqiqada akkaunt yaratiladi.",
     ps2h:"Jadval tuzing",         ps2p:"Qaysi bolalarni va qachon qabul qilishingizni belgilang.",
     ps3h:"Xizmat ko'rsating",     ps3p:"Yaxshi darslarda bolalar 87% hollarda qaytib keladi.",
-    ps4h:"QR orqali to'lov",      ps4p:"Har safar QR kod skanerlansa, biz sizga to'laymiz.",
+    ps4h:"Bronlarni kuzating",      ps4p:"Dashboard orqali barcha bronlar, jadvallar va to'lovlarni boshqaring.",
 
     pp_cta_h2:  "Hoziroq ariza qoldiring",
     pp_cta_p:   "Mutaxassislarimiz siz bilan bog'lanib, barcha savollaringizga javob berishadi.",
@@ -246,22 +255,28 @@ const T = {
   en: {
     nav_home:"Home", nav_features:"Features", nav_activities:"Centers",
     nav_how:"How it works", nav_pricing:"Pricing", nav_faq:"FAQ",
-    nav_partners:"For Partners", nav_contact:"Contact", nav_cta:"Open App",
+    nav_partners:"For Partners", nav_contact:"Contact", nav_cta:"Get Started →",
 
     hero_badge:"Tashkent's #1 children's platform",
     hero_h1a:"Your child's ", hero_h1b:"bright future", hero_h1c:" starts here",
     hero_p:"Find and book the best children's activity centers in Tashkent — sports, arts, education and fun. All with Lumi Coins.",
-    hero_btn_web:"Open App", hero_btn_tg:"Via Telegram",
+    hero_btn_web:"Start Free →", hero_btn_tg:"",
     hero_note:"🔒 Free access — no sign-up required",
     stat_partners:"Partners", stat_dirs:"Directions", stat_age:"Age range", stat_support:"Support",
-    hfc_activity:"Booked", hfc_booked:"Confirmed ✓", hfc_balance:"Your Balance",
+    hfc_activity:"Bookings", hfc_booked:"Confirmed ✓", hfc_balance:"Your Balance",
     hfc_coins:"Lumi Coins",
-    partners_title:"50+ partner centers work with us",
+    hfc_map_label: "Partner Centers",
+    hfc_mgmt_month: "March",
+    hfc_map_centers: "partner centers",
+    hfc_mgmt_label: "My Bookings",
+    hfc_mgmt_pending: "New booking",
+    hfc_status_ok: "✓",
+    partners_title:"30+ partner centers work with us",
 
     feat_tag:"Why Lumi?",
     feat_h2a:"Everything your child needs — ", feat_h2b:"all in one place",
     feat_p:"Lumi connects you to verified children's activity centers across Tashkent — sports, arts and education on one platform.",
-    f1h:"All in One Place",     f1p:"Find and book activities at 50+ partner centers from one convenient platform.",
+    f1h:"All in One Place",     f1p:"Find and book activities at 30+ partner centers from one convenient platform.",
     f2h:"Save Your Time",       f2p:"Schedule lessons effortlessly. All bookings, centers, and reminders in one place.",
     f3h:"Trusted Partners",     f3p:"We only work with verified centers. Parent reviews help you make the right choice.",
     f4h:"Track Progress",       f4p:"Monitor your child's achievements and get personalized recommendations.",
@@ -269,26 +284,29 @@ const T = {
     f6h:"Safety First",         f6p:"Your child always participates in a supervised, safe environment.",
 
     act_tag:"Centers",
-    act_h2a:"100+ activities at ", act_h2b:"50+ partner centers",
-    act_p:"Lumi brings Tashkent's best children's centers together in one place. Find, book, and go — the center is waiting for you.",
+    act_h2a:"50+ activities at ", act_h2b:"30+ partner centers",
+    act_p:"Lumi brings Tashkent's best children's centers together in one place. 50+ activities, 30+ verified centers — find, book, and go.",
     act_at_centers:"centers near you",
-    act_book:"Browse Centers →",
+    act_book:"Explore →",
     a1h:"Robotics",            a1p:"For tech-curious kids. Find and book robotics centers across Tashkent.",
     a2h:"Creative Classes",    a2p:"Art, music, drawing — discover your child's talent at partner creative studios.",
     a3h:"Playgrounds",         a3p:"Quality, safe playgrounds. Choose a center and book your slot.",
     a4h:"Dance & Gymnastics",  a4p:"Professional dance and gymnastics centers — for posture, flexibility, and rhythm.",
     a5h:"Swimming",            a5p:"Learn to swim with qualified coaches. Find children's pools and enroll.",
     a6h:"Football",            a6p:"Team sport — strength and friendship. Find football schools in Tashkent in one place.",
+    a7h:"Tennis",               a7p:"Professional tennis centers — coordination and strategic thinking for young athletes.",
+    a8h:"Languages",            a8p:"English, Russian and more — quality courses with certified instructors.",
+    a9h:"Maths & Logic",        a9p:"Maths and critical thinking centers — broaden your child's academic potential.",
 
     stats_h2a:"Lumi in ", stats_h2b:"numbers",
-    s1v:"50+",s1d:"Partners", s2v:"100+",s2d:"Directions", s3v:"6+",s3d:"Packages", s4v:"24/7",s4d:"Support",
+    s1v:"30+",s1d:"Partners", s2v:"50+",s2d:"Directions", s3v:"6+",s3d:"Packages", s4v:"24/7",s4d:"Support",
 
     how_tag:"How it works",
     how_h2a:"Get started in ", how_h2b:"4 easy steps",
     how_p:"Booking an activity for your child through Lumi is simple.",
     s1h:"Sign Up",            s1p:"Register quickly via our Telegram bot.",
     s2h:"Get a Package",      s2p:"Choose the Lumi Coins package that suits you.",
-    s3h:"Pick a Center",      s3p:"Find the perfect center from 50+ verified partners.",
+    s3h:"Pick a Center",      s3p:"Find the perfect center from 30+ verified partners.",
     s4h:"Watch Them Grow!",   s4p:"Track your child's progress and achievements.",
 
     price_tag:"Packages",
@@ -300,19 +318,19 @@ const T = {
 
     faq_tag:"FAQ", faq_h2a:"Frequently asked ", faq_h2b:"questions",
     faq_p:"Got a question? We've got the answer.",
-    q1:"What is Lumi?",              a1:"Lumi is a platform that connects families to 50+ verified children's activity centers in Tashkent. Sports, arts, education — all in one place. You don't search for centers — Lumi recommends them to you.",
+    q1:"What is Lumi?",              a1:"Lumi is a platform that connects families to 30+ verified children's activity centers in Tashkent. Sports, arts, education — all in one place. You don't search for centers — Lumi recommends them to you.",
     q2:"Is there a subscription?",  a2:"No. With the Lumi Coins system you only pay for sessions you actually use. You can also choose between multiple centers freely.",
     q3:"How do Lumi Coins work?",   a3:"Lumi Coins are digital units for enrolling in activities at partner centers. Each center sets its own coin price — giving you the freedom to compare and choose.",
     q4:"Do unused coins expire?",   a4:"Yes, each package has a validity period. Unused coins are cancelled after expiry. We recommend using your coins actively.",
     q5:"How do I book an activity?",a5:"Go to our Telegram bot — it opens our web app. Browse all partner centers, pick one, and book instantly using your Lumi Coins.",
-    q6:"What activities are available?",a6:"Sports (karate, swimming, football...), creative (art, music, dance...), educational (English, logic, math...), developmental and entertainment — 100+ directions.",
+    q6:"What activities are available?",a6:"Sports (karate, swimming, football...), creative (art, music, dance...), educational (English, logic, math...), developmental and entertainment — 50+ directions.",
 
     cta_tag:"Start Now", cta_h2:"Your child's bright future starts here!",
     cta_p:"Join thousands of families in Tashkent discovering the best activity centers through Lumi.",
-    cta_note:"⭐ Best experience — start directly from our web app",
-    cta_webapp:"Open Web App", cta_tg:"Via Telegram", cta_sub:"Free · No registration required",
+    cta_note:"",
+    cta_webapp:"Start Now →", cta_tg:"Via Telegram", cta_sub:"Free · No registration required",
 
-    footer_tagline:"Sports, arts, education and fun for children in Tashkent — 50+ partner centers, one platform.",
+    footer_tagline:"Sports, arts, education and fun for children in Tashkent — 30+ partner centers, one platform.",
     footer_company:"Company", footer_legal:"Legal", footer_privacy:"Privacy Policy",
     footer_offer:"Public Offer", footer_contact:"Contact",
     footer_rights:"All rights reserved.", footer_made:"Made with ❤️ for children of Tashkent",
@@ -321,7 +339,7 @@ const T = {
     pp_h1a:"Grow your center's revenue by ", pp_h1b:"+50%", pp_h1c:" — in just 20 minutes",
     pp_p:"Join Lumi and be visible to thousands of parents looking for the best center for their children.",
     pp_btn:"Become a Partner",
-    pp_stat1v:"50+",pp_stat1d:"Partner centers", pp_stat2v:"20 min",pp_stat2d:"Time to join", pp_stat3v:"+50%",pp_stat3d:"Avg. revenue growth",
+    pp_stat1v:"30+",pp_stat1d:"Partner centers", pp_stat2v:"20 min",pp_stat2d:"Time to join", pp_stat3v:"+50%",pp_stat3d:"Avg. revenue growth",
 
     ppd_today_label:"Today's bookings", ppd_bookings:"bookings ✓", ppd_growing:"📈 Growing",
     ppd_schedule_label:"Monday schedule", ppd_kids_booked:"kids enrolled",
@@ -337,7 +355,7 @@ const T = {
     hu1h:"Sign up",       hu1p:"Download the Lumi app and register.",
     hu2h:"Browse centers",hu2p:"Browse children's centers and activities.",
     hu3h:"Enroll",        hu3p:"Enroll directly at your center.",
-    hu4h:"Visit",         hu4p:"Come in and scan the QR code — payment is automatic.",
+    hu4h:"Manage Bookings",         hu4p:"View and manage all bookings and schedules directly in Telegram.",
 
     pp_why_tag:"Benefits",
     pp_why_h2a:"Why partner ", pp_why_h2b:"with Lumi?",
@@ -361,7 +379,7 @@ const T = {
     ps1h:"Connect to Platform",    ps1p:"Sign the agreement — your account is created in 15–20 minutes.",
     ps2h:"Set Your Schedule",      ps2p:"Define which children you accept and when.",
     ps3h:"Deliver Great Service",  ps3p:"With great lessons, 87% of children come back.",
-    ps4h:"QR Payment",             ps4p:"Every time a QR code is scanned, we pay you.",
+    ps4h:"Manage Bookings",             ps4p:"Track all bookings, schedules and payments through your partner dashboard.",
 
     pp_cta_h2:"Submit your application now",
     pp_cta_p:"Our specialists will contact you and answer all your questions.",
@@ -393,22 +411,28 @@ const T = {
   ru: {
     nav_home:"Главная", nav_features:"Преимущества", nav_activities:"Центры",
     nav_how:"Как работает", nav_pricing:"Пакеты", nav_faq:"Вопросы",
-    nav_partners:"Партнёрам", nav_contact:"Контакты", nav_cta:"Открыть приложение",
+    nav_partners:"Партнёрам", nav_contact:"Контакты", nav_cta:"Начать →",
 
     hero_badge:"Платформа №1 для детей в Ташкенте",
     hero_h1a:"Светлое будущее ", hero_h1b:"вашего ребёнка", hero_h1c:" начинается здесь",
     hero_p:"Найдите и запишитесь в лучшие детские центры Ташкента — спорт, творчество, образование и развлечения. Всё через Lumi Coins.",
-    hero_btn_web:"Открыть приложение", hero_btn_tg:"Через Telegram",
+    hero_btn_web:"Начать бесплатно →", hero_btn_tg:"",
     hero_note:"🔒 Бесплатный доступ — регистрация не нужна",
     stat_partners:"Партнёры", stat_dirs:"Направлений", stat_age:"Возраст", stat_support:"Поддержка",
-    hfc_activity:"Записано", hfc_booked:"Подтверждено ✓", hfc_balance:"Ваш баланс",
+    hfc_activity:"Бронирования", hfc_booked:"Подтверждено ✓", hfc_balance:"Ваш баланс",
     hfc_coins:"Lumi Монеты",
-    partners_title:"50+ партнёрских центров работают с нами",
+    hfc_map_label: "Центры партнёров",
+    hfc_mgmt_month: "Март",
+    hfc_map_centers: "партнёрских центров",
+    hfc_mgmt_label: "Мои брони",
+    hfc_mgmt_pending: "Новая запись",
+    hfc_status_ok: "✓",
+    partners_title:"30+ партнёрских центров работают с нами",
 
     feat_tag:"Почему Lumi?",
     feat_h2a:"Всё, что нужно вашему ребёнку — ", feat_h2b:"в одном месте",
     feat_p:"Lumi соединяет вас с проверенными детскими центрами Ташкента — спорт, творчество, образование на одной платформе.",
-    f1h:"Всё в одном месте",    f1p:"Находите и записывайтесь в 50+ центров с одной удобной платформы.",
+    f1h:"Всё в одном месте",    f1p:"Находите и записывайтесь в 30+ центров с одной удобной платформы.",
     f2h:"Экономьте время",      f2p:"Планируйте занятия без усилий. Все центры, бронирования и напоминания в одном месте.",
     f3h:"Проверенные партнёры", f3p:"Работаем только с проверенными центрами. Отзывы помогут сделать выбор.",
     f4h:"Отслеживайте прогресс",f4p:"Следите за достижениями ребёнка и получайте рекомендации.",
@@ -416,26 +440,29 @@ const T = {
     f6h:"Безопасность прежде всего",f6p:"Ваш ребёнок всегда занимается под наблюдением в безопасной среде.",
 
     act_tag:"Центры",
-    act_h2a:"100+ направлений в ", act_h2b:"50+ партнёрских центрах",
-    act_p:"Lumi собрал лучшие детские центры Ташкента в одном месте. Найдите, запишитесь — центр вас ждёт.",
+    act_h2a:"50+ направлений в ", act_h2b:"30+ партнёрских центрах",
+    act_p:"Lumi собрал лучшие детские центры Ташкента в одном месте. 50+ направлений, 30+ проверенных центров — найдите, запишитесь.",
     act_at_centers:"центров рядом",
-    act_book:"Смотреть центры →",
+    act_book:"Смотреть →",
     a1h:"Робототехника",      a1p:"Для любознательных детей. Найдите и запишитесь в центры робототехники Ташкента.",
     a2h:"Творческие занятия", a2p:"Искусство, музыка, рисование — откройте талант ребёнка в партнёрских студиях.",
     a3h:"Детские площадки",   a3p:"Качественные, безопасные площадки. Выберите центр и забронируйте место.",
     a4h:"Танцы и гимнастика", a4p:"Профессиональные танцевальные и гимнастические центры.",
     a5h:"Плавание",           a5p:"Учитесь плавать с квалифицированными тренерами. Найдите детские бассейны.",
     a6h:"Футбол",             a6p:"Командный спорт — сила и дружба. Найдите футбольные школы Ташкента.",
+    a7h:"Теннис",              a7p:"Профессиональные теннисные центры — координация и стратегическое мышление.",
+    a8h:"Языки",               a8p:"Английский, русский и другие — качественные курсы с сертифицированными преподавателями.",
+    a9h:"Математика и логика", a9p:"Центры математики и критического мышления — расширьте академические возможности ребёнка.",
 
     stats_h2a:"Lumi в ", stats_h2b:"цифрах",
-    s1v:"50+",s1d:"Партнёры", s2v:"100+",s2d:"Направлений", s3v:"6+",s3d:"Пакетов", s4v:"24/7",s4d:"Поддержка",
+    s1v:"30+",s1d:"Партнёры", s2v:"50+",s2d:"Направлений", s3v:"6+",s3d:"Пакетов", s4v:"24/7",s4d:"Поддержка",
 
     how_tag:"Как работает",
     how_h2a:"Начните за ", how_h2b:"4 простых шага",
     how_p:"Записать ребёнка на занятие через Lumi очень просто.",
     s1h:"Зарегистрируйтесь",    s1p:"Быстро зарегистрируйтесь через Telegram-бот.",
     s2h:"Купите пакет",         s2p:"Выберите подходящий пакет Lumi Coins.",
-    s3h:"Выберите центр",       s3p:"Найдите идеальный центр среди 50+ проверенных партнёров.",
+    s3h:"Выберите центр",       s3p:"Найдите идеальный центр среди 30+ проверенных партнёров.",
     s4h:"Наблюдайте за ростом!",s4p:"Отслеживайте прогресс и достижения ребёнка.",
 
     price_tag:"Пакеты",
@@ -447,19 +474,19 @@ const T = {
 
     faq_tag:"Вопросы", faq_h2a:"Часто задаваемые ", faq_h2b:"вопросы",
     faq_p:"Есть вопрос? У нас есть ответ.",
-    q1:"Что такое Lumi?",             a1:"Lumi — платформа, которая объединяет семьи с 50+ проверенными детскими центрами Ташкента. Спорт, творчество, образование — всё в одном месте.",
+    q1:"Что такое Lumi?",             a1:"Lumi — платформа, которая объединяет семьи с 30+ проверенными детскими центрами Ташкента. Спорт, творчество, образование — всё в одном месте.",
     q2:"Есть ли абонемент?",         a2:"Нет. Система Lumi Coins — вы платите только за использованные занятия и можете выбирать между разными центрами.",
     q3:"Как работают Lumi Coins?",   a3:"Lumi Coins — цифровые единицы для записи в центры. Каждый центр устанавливает свою цену в монетах.",
     q4:"Сгорают ли неиспользованные монеты?",a4:"Да, каждый пакет имеет срок действия. Рекомендуем активно использовать монеты.",
     q5:"Как записаться на занятие?", a5:"Перейдите в наш Telegram-бот — он открывает веб-приложение. Просматривайте центры и записывайтесь через Lumi Coins.",
-    q6:"Какие занятия доступны?",    a6:"Спорт (каратэ, плавание, футбол...), творческие, образовательные, развивающие — 100+ направлений.",
+    q6:"Какие занятия доступны?",    a6:"Спорт (каратэ, плавание, футбол...), творческие, образовательные, развивающие — 50+ направлений.",
 
     cta_tag:"Начните сейчас", cta_h2:"Светлое будущее вашего ребёнка здесь!",
     cta_p:"Присоединяйтесь к тысячам семей Ташкента, открывающих лучшие центры через Lumi.",
-    cta_note:"⭐ Лучший опыт — начните через наше веб-приложение",
-    cta_webapp:"Открыть веб-приложение", cta_tg:"Через Telegram", cta_sub:"Бесплатно · Без регистрации",
+    cta_note:"",
+    cta_webapp:"Начать сейчас →", cta_tg:"Через Telegram", cta_sub:"Бесплатно · Без регистрации",
 
-    footer_tagline:"Спорт, творчество, образование и развлечения для детей Ташкента — 50+ центров, одна платформа.",
+    footer_tagline:"Спорт, творчество, образование и развлечения для детей Ташкента — 30+ центров, одна платформа.",
     footer_company:"Компания", footer_legal:"Правовая информация",
     footer_privacy:"Конфиденциальность", footer_offer:"Публичная оферта",
     footer_contact:"Контакты", footer_rights:"Все права защищены.",
@@ -469,7 +496,7 @@ const T = {
     pp_h1a:"Увеличьте доход на ", pp_h1b:"+50%", pp_h1c:" — за 20 минут",
     pp_p:"Присоединяйтесь к Lumi и станьте видимыми для тысяч родителей.",
     pp_btn:"Стать партнёром",
-    pp_stat1v:"50+",pp_stat1d:"Партнёрских центров", pp_stat2v:"20 мин",pp_stat2d:"Время подключения", pp_stat3v:"+50%",pp_stat3d:"Рост дохода",
+    pp_stat1v:"30+",pp_stat1d:"Партнёрских центров", pp_stat2v:"20 мин",pp_stat2d:"Время подключения", pp_stat3v:"+50%",pp_stat3d:"Рост дохода",
 
     ppd_today_label:"Броней сегодня", ppd_bookings:"бронирований ✓", ppd_growing:"📈 Растёт",
     ppd_schedule_label:"Расписание понедельника", ppd_kids_booked:"детей записано",
@@ -485,7 +512,7 @@ const T = {
     hu1h:"Регистрируются",  hu1p:"Скачивают приложение и регистрируются.",
     hu2h:"Выбирают центр",  hu2p:"Просматривают детские центры и занятия.",
     hu3h:"Записываются",    hu3p:"Записываются напрямую в ваш центр.",
-    hu4h:"Приходят",        hu4p:"Приходят и сканируют QR-код — оплата автоматически.",
+    hu4h:"Управляют бронями",        hu4p:"Просматривают и управляют бронированиями прямо в Telegram.",
 
     pp_why_tag:"Преимущества",
     pp_why_h2a:"Почему партнёриться ", pp_why_h2b:"с Lumi?",
@@ -509,7 +536,7 @@ const T = {
     ps1h:"Подключитесь",          ps1p:"Подпишите договор — аккаунт за 15–20 минут.",
     ps2h:"Составьте расписание",  ps2p:"Определите, каких детей и когда принимаете.",
     ps3h:"Оказывайте услуги",     ps3p:"При хорошем обслуживании 87% детей возвращаются.",
-    ps4h:"Оплата по QR",          ps4p:"Каждый раз при сканировании QR-кода мы вам платим.",
+    ps4h:"Управляйте бронями",          ps4p:"Отслеживайте все бронирования, расписания и платежи через панель управления.",
 
     pp_cta_h2:"Оставьте заявку прямо сейчас",
     pp_cta_p:"Наши специалисты свяжутся и ответят на все вопросы.",
@@ -721,6 +748,32 @@ function buildFooterLinks() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   FOOTER LEGAL LINKS (from LUMI_CONFIG.PRIVACY_URL / OFFER_URL)
+   ═══════════════════════════════════════════════════════════════ */
+function buildFooterLegalLinks() {
+  if (typeof LUMI_CONFIG === "undefined") return;
+  document.querySelectorAll("a.footer-privacy-link").forEach(el => {
+    if (LUMI_CONFIG.PRIVACY_URL) el.href = LUMI_CONFIG.PRIVACY_URL;
+  });
+  document.querySelectorAll("a.footer-offer-link").forEach(el => {
+    if (LUMI_CONFIG.OFFER_URL) el.href = LUMI_CONFIG.OFFER_URL;
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ACTIVITY CARD IMAGES (slots 7-9) from LUMI_CONFIG.ACTIVITY_IMAGES
+   ═══════════════════════════════════════════════════════════════ */
+function buildActivityImages() {
+  if (typeof LUMI_CONFIG === "undefined") return;
+  const imgs = LUMI_CONFIG.ACTIVITY_IMAGES;
+  if (!imgs) return;
+  Object.entries(imgs).forEach(([slot, src]) => {
+    const el = document.getElementById("activity-img-" + slot);
+    if (el && src) el.src = src;
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════════
    HERO IMAGE  (from LUMI_CONFIG.HERO_IMAGE)
    NEW: fills hero photo src from config instead of being hardcoded
    ═══════════════════════════════════════════════════════════════ */
@@ -753,13 +806,14 @@ function buildHeroCards() {
   if (!bookings || !bookings.length) return;
 
   bookings.forEach((b, i) => {
-    const idx = i + 1; // cards are hfc-booking-1, hfc-booking-2, hfc-booking-3
+    const idx = i + 1; // cards are hfc-booking-1, hfc-booking-2
     const emojiEl = document.getElementById(`hfc-b${idx}-emoji`);
     const nameEl  = document.getElementById(`hfc-b${idx}-name`);
     const timeEl  = document.getElementById(`hfc-b${idx}-time`);
     if (emojiEl) emojiEl.textContent = b.emoji;
     if (nameEl)  nameEl.textContent  = b.name[currentLang] || b.name.uz;
     if (timeEl)  timeEl.textContent  = b.time;
+
   });
 }
 
@@ -921,6 +975,8 @@ document.addEventListener("DOMContentLoaded", () => {
   fillHeroImage();          // NEW: fills hero photo from config
   fillCoinAmount();         // NEW: fills coin balance from config
   buildAppScreenshots();    // NEW: fills screenshot imgs from config
+  buildActivityImages();    // NEW: fills activity card imgs 7-9 from config
+  buildFooterLegalLinks();  // NEW: fills privacy/offer hrefs from config
   initReveal();
   initNavbar();
   buildPartnersStrip();
